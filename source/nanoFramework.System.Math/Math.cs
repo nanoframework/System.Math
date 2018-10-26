@@ -17,6 +17,7 @@ namespace System
         /// </summary>
         /// <remarks>The value of this field is 3.14159265358979323846.</remarks>
         public const double PI = 3.14159265358979323846;
+        
         /// <summary>
         /// Represents the natural logarithmic base, specified by the constant, e.
         /// </summary>
@@ -28,8 +29,10 @@ namespace System
         /// </summary>
         /// <param name="val">A number that is greater than Int32..::..MinValue, but less than or equal to Int32..::..MaxValue.</param>
         /// <returns>A 32-bit signed integer, x, such that 0 ≤ x ≤ Int32..::..MaxValue.</returns>
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        public static extern int Abs(int val);
+        public static int Abs(int val)
+        {
+            return MathInternal.Abs(val);
+        }
 
         /// <summary>
         /// Returns the larger of two 32-bit signed integers.
@@ -37,8 +40,10 @@ namespace System
         /// <param name="val1">The first of two 32-bit signed integers to compare. </param>
         /// <param name="val2">The second of two 32-bit signed integers to compare. </param>
         /// <returns>Parameter val1 or val2, whichever is larger.</returns>
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        public static extern int Max(int val1, int val2);
+        public static int Max(int val1, int val2)
+        {
+            return MathInternal.Max(val1, val2);
+        }
 
         /// <summary>
         /// Returns the smaller of two 32-bit signed integers.
@@ -46,8 +51,10 @@ namespace System
         /// <param name="val1">The first of two 32-bit signed integers to compare. </param>
         /// <param name="val2">The second of two 32-bit signed integers to compare. </param>
         /// <returns>Parameter val1 or val2, whichever is smaller.</returns>
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        public static extern int Min(int val1, int val2);
+        public static int Min(int val1, int val2)
+        {
+            return MathInternal.Min(val1, val2);
+        }
 
         /// <summary>
         /// Returns the absolute value of a double-precision floating-point number.
@@ -60,6 +67,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Abs(double val);
+        
         /// <summary>
         /// Returns the absolute value of a single-precision floating-point number.
         /// </summary>
@@ -84,6 +92,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Acos(double d);
+        
         /// <summary>
         /// Returns the angle whose cosine is the specified number.
         /// </summary>
@@ -108,6 +117,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Asin(double d);
+        
         /// <summary>
         /// Returns the angle whose sine is the specified number.
         /// </summary>
@@ -132,6 +142,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Atan(double d);
+        
         /// <summary>
         /// Returns the angle whose tangent is the specified number.
         /// </summary>
@@ -157,6 +168,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Atan2(double y, double x);
+        
         /// <summary>
         /// Returns the angle whose tangent is the quotient of two specified numbers.
         /// </summary>
@@ -182,6 +194,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Ceiling(double d);
+        
         /// <summary>
         /// Returns the smallest integral value that is greater than or equal to the specified single-precision floating-point number.
         /// </summary>
@@ -206,6 +219,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Cos(double a);
+        
         /// <summary>
         /// Returns the cosine of the specified angle.
         /// </summary>
@@ -230,6 +244,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Cosh(double a);
+        
         /// <summary>
         /// Returns the hyperbolic cosine of the specified angle.
         /// </summary>
@@ -257,6 +272,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double IEEERemainder(double x, double y);
+        
         /// <summary>
         /// Returns the remainder resulting from the division of a specified number by another specified number.
         /// </summary>
@@ -284,6 +300,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Exp(double d);
+        
         /// <summary>
         /// Returns e raised to the specified power.
         /// </summary>
@@ -308,6 +325,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Floor(double d);
+        
         /// <summary>
         /// Returns the largest integer less than or equal to the specified single-precision floating-point number.
         /// </summary>
@@ -332,6 +350,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Log(double d);
+        
         /// <summary>
         /// Returns the natural (base e) logarithm of a specified number.
         /// </summary>
@@ -381,6 +400,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Max(double x, double y);
+       
         /// <summary>
         /// Returns the larger of two single-precision floating-point numbers.
         /// </summary>
@@ -407,6 +427,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Min(double x, double y);
+        
         /// <summary>
         /// Returns the smaller of two single-precision floating-point numbers.
         /// </summary>
@@ -433,6 +454,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Pow(double x, double y);
+        
         /// <summary>
         /// Returns a specified number raised to the specified power.
         /// </summary>
@@ -458,6 +480,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Round(double d);
+        
         /// <summary>
         /// Rounds a single-precision floating-point value to the nearest integral value.
         /// </summary>
@@ -482,6 +505,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern int Sign(double value);
+        
         /// <summary>
         /// Returns a value indicating the sign of a single-precision floating-point number.
         /// </summary>
@@ -506,6 +530,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Sin(double a);
+        
         /// <summary>
         /// Returns the sine of the specified angle.
         /// </summary>
@@ -530,6 +555,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Sinh(double value);
+        
         /// <summary>
         /// Returns the hyperbolic sine of the specified angle.
         /// </summary>
@@ -554,6 +580,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Sqrt(double d);
+        
         /// <summary>
         /// Returns the square root of a specified number.
         /// </summary>
@@ -578,6 +605,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Tan(double a);
+        
         /// <summary>
         /// Returns the tangent of the specified angle.
         /// </summary>
@@ -602,6 +630,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Tanh(double value);
+        
         /// <summary>
         /// Returns the hyperbolic tangent of the specified angle.
         /// </summary>
@@ -626,6 +655,7 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Truncate(double d);
+        
         /// <summary>
         /// Calculates the integral part of a specified single-precision floating-point number.
         /// </summary>
