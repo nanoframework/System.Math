@@ -12,7 +12,7 @@
 
 | Component | Build Status | NuGet Package |
 |:-|---|---|
-| nanoFramework.System.Math | [![Build status](https://ci.appveyor.com/api/projects/status/qpn1rfpp7lvdlnmx/branch/master?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-system-math/branch/master) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.Math.svg)](https://www.nuget.org/packages/nanoFramework.System.Math/)  |
+| nanoFramework.System.Math | [![Build status](https://ci.appveyor.com/api/projects/status/qpn1rfpp7lvdlnmx/branch/master?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-system-math/branch/master) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.System.Math.svg)](https://www.nuget.org/packages/nanoFramework.System.Math/)  |
 | nanoFramework.System.Math (preview) | [![Build status](https://ci.appveyor.com/api/projects/status/qpn1rfpp7lvdlnmx/branch/develop?svg=true)](https://ci.appveyor.com/project/nfbot/lib-nanoframework-system-math/branch/develop) | [![MyGet Pre Release](https://img.shields.io/myget/nanoframework-dev/vpre/nanoFramework.System.Math.svg)](https://www.myget.org/feed/nanoframework-dev/package/nuget/nanoFramework.System.Math) |
 
 
