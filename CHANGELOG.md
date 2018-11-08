@@ -4,6 +4,8 @@
 
 **Documentation and other chores:**
 
+- Bumps nanoFramework.CoreLibrary from 1.0.5-preview024 to 1.0.6-preview-001 [\#3](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/3)
+- Work on CD/CI [\#2](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/2)
 - Bumps nanoFramework.CoreLibrary from 1.0.5-preview019 to 1.0.5-preview024 [\#1](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/1)
 
 
