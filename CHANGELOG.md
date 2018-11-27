@@ -1,7 +1,6 @@
 # Change Log
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/HEAD)
-
+## [v1.0.2-preview-010](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.0.2-preview-010) (2018-11-20)
 **Documentation and other chores:**
 
 - Bumps nanoFramework.CoreLibrary from 1.0.6-preview-001 to 1.0.6-preview-010 [\#4](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/4)
