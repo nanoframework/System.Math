@@ -1,11 +1,11 @@
 # Change Log
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/HEAD)
-
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.0.2...HEAD)
+## [v1.0.4](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.0.4) (2019-01-21)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.0.2...v1.0.4)
 
 **Documentation and other chores:**
 
+- Release v1.0.4 [\#12](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/12)
 - Bumps nanoFramework.CoreLibrary from 1.1.0 to 1.1.1 [\#11](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/11)
 - Merge back from Release v1.0.2 [\#10](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/10)
 
