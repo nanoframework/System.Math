@@ -6,6 +6,7 @@
 
 **Documentation and other chores:**
 
+- Bumps nanoFramework.CoreLibrary from 1.1.0 to 1.1.1 [\#11](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/11)
 - Merge back from Release v1.0.2 [\#10](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/10)
 
 ## [v1.0.2](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.0.2) (2018-12-15)
