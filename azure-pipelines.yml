@@ -40,7 +40,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   nugetPackageName: 'nanoFramework.System.Math'
-  repoName: 'lib-nanoFramework.System.Math '
+  repoName: 'lib-nanoFramework.System.Math'
 
 steps:
 
