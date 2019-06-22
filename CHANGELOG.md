@@ -2,7 +2,14 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.0.6-preview.6...HEAD)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.0.6-preview.10...HEAD)
+
+**Documentation and other chores:**
+
+- Work on native assembly declaration [\#21](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/21) [[Breaking-Change](https://github.com/nanoframework/lib-nanoFramework.System.Math/labels/Breaking-Change)]
+
+## [v1.0.6-preview.10](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.0.6-preview.10) (2019-06-20)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.0.6-preview.6...v1.0.6-preview.10)
 
 **Documentation and other chores:**
 
