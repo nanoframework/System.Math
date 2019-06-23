@@ -6,6 +6,7 @@
 
 **Documentation and other chores:**
 
+- Bumps nanoFramework.CoreLibrary from 1.2.6-preview.1 to 1.2.6-preview.7 [\#23](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/23)
 - Work on native assembly declaration [\#21](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/21) [[Breaking-Change](https://github.com/nanoframework/lib-nanoFramework.System.Math/labels/Breaking-Change)]
 
 ## [v1.0.6-preview.10](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.0.6-preview.10) (2019-06-20)
