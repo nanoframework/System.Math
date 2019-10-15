@@ -13,3 +13,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright © ")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+
+////////////////////////////////////////////////////////////////
+// update this whenever the native assembly signature changes //
+[assembly: AssemblyNativeVersion("100.0.4.3")]
+////////////////////////////////////////////////////////////////
+
