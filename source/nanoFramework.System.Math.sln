@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.System.Math", "nanoFramework.System.Math\nanoFramework.System.Math.nfproj", "{E30AE2AA-BED0-4AA8-AC22-04C274898894}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D1E7E5ED-2178-4E00-9FC5-EC7ADC24A74F}"
+	ProjectSection(SolutionItems) = preProject
+		nanoFramework.System.Math.DELIVERABLES.nuspec = nanoFramework.System.Math.DELIVERABLES.nuspec
+		nanoFramework.System.Math.nuspec = nanoFramework.System.Math.nuspec
+		NuGet.Config = NuGet.Config
+		version.json = version.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
