@@ -1,8 +1,24 @@
 # Changelog
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/HEAD)
+## [v1.3.0](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.3.0) (2020-06-17)
 
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.2.0-preview.17...HEAD)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.2.0...v1.3.0)
+
+**Documentation and other chores:**
+
+- Release release-v1.3.0 [\#48](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/48)
+
+## [v1.2.0](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.2.0) (2020-06-11)
+
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.2.0-preview.19...v1.2.0)
+
+**Documentation and other chores:**
+
+- Release release-v1.2.0 [\#47](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/47)
+
+## [v1.2.0-preview.19](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.2.0-preview.19) (2020-06-11)
+
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.2.0-preview.17...v1.2.0-preview.19)
 
 **Documentation and other chores:**
 
