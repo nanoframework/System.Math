@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.3.0...HEAD)
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.3.1-preview.3...HEAD)
+
+**Documentation and other chores:**
+
+- Update dependencies [\#50](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/50)
+
+## [v1.3.1-preview.3](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.3.1-preview.3) (2020-09-19)
+
+[Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.3.0...v1.3.1-preview.3)
 
 **Documentation and other chores:**
 
@@ -83,6 +91,7 @@
 **Documentation and other chores:**
 
 - Bumps nanoFramework.CoreLibrary from 1.7.0-preview.12 to 1.7.1-preview.4 [\#40](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/40)
+- Bumps nanoFramework.CoreLibrary from 1.4.1-preview.1 to 1.5.0-preview.1 [\#34](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/34)
 
 ## [v1.2.0-preview.11](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.2.0-preview.11) (2020-03-10)
 
@@ -127,10 +136,6 @@
 ## [v1.2.0-preview.5](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.2.0-preview.5) (2019-11-04)
 
 [Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.2.0-preview.4...v1.2.0-preview.5)
-
-**Documentation and other chores:**
-
-- Bumps nanoFramework.CoreLibrary from 1.4.1-preview.1 to 1.5.0-preview.1 [\#34](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/34)
 
 ## [v1.2.0-preview.4](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.2.0-preview.4) (2019-10-23)
 
@@ -210,6 +215,10 @@
 
 [Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.0.6-preview.2...v1.0.6-preview.6)
 
+**Documentation and other chores:**
+
+- Bumps nanoFramework.CoreLibrary from 1.2.4-preview.1 to 1.2.5-preview.1 [\#19](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/19)
+
 ## [v1.0.6-preview.2](https://github.com/nanoframework/lib-nanoFramework.System.Math/tree/v1.0.6-preview.2) (2019-06-12)
 
 [Full Changelog](https://github.com/nanoframework/lib-nanoFramework.System.Math/compare/v1.0.5-preview-001...v1.0.6-preview.2)
@@ -229,7 +238,6 @@
 
 **Documentation and other chores:**
 
-- Bumps nanoFramework.CoreLibrary from 1.2.4-preview.1 to 1.2.5-preview.1 [\#19](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/19)
 - Bumps nanoFramework.CoreLibrary from 1.2.0 to 1.2.1-preview-001 [\#14](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/14)
 - Bumps nanoFramework.CoreLibrary from 1.1.1 to 1.2.0 [\#13](https://github.com/nanoframework/lib-nanoFramework.System.Math/pull/13)
 
