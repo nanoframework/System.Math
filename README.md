@@ -15,7 +15,7 @@
 
 ## Available APIs and floating-point implementations
 
-The .NET System.Math APIs are available with `double` parameters. No sweat for the CPUs where the code usually runs.
+The .NET [System.Math](https://docs.microsoft.com/en-us/dotnet/api/system.math) APIs are available with `double` parameters. No sweat for the CPUs where the code usually runs.
 When we move to embedded systems that's a totally different story. 
 
 A few more details to properly set context:
@@ -28,20 +28,9 @@ There are all sorts of variants and combinations on how to deal with FP and DP i
 
 Adding to the above, the extra precision provided by the `double` type is seldom required on typical embedded application use cases.
 
-Considering all this and the ongoing quest to save flash space we've decided to provide two *flavours* for the System.Math API: the standard one with `double` type parameters and the alternative, lightweight one, with `float` type parameters.
+Considering all this and the ongoing quest to save flash space, despite System.Math API offering `double` type parameters, the type handling at the native code will depend on build options of the firmware. The default implementation works with `float` under the hood. There is a build option (`DP_FLOATINGPOINT`) to build the image with DP floating point, which should be used when 'that' extra precision is required.
 
-This has zero impact on API and code reuse as both coexist. The only difference is on the firmware image. There is a build option (`DP_FLOATINGPOINT`) to build the image with DP floating point, when that extra precision is required.
-
-A `NotImplementedException` will be throw when there is no native support for an API. The remedy is to call the API with the _other_ parameter type.
-
-```(csharp)
-// this is OK when running on a image that has DP floating point support
-Math.Pow(1.01580092094650000000000000, 0.19029495718363400000000000000);
-
-// this is the correct usage when running on a image WITHOUT support for DP floating point
-Math.Pow(1.0158009209465f, 0.190294957183634f);
-``` 
-
+In case this is relevant, the capability of dealing with double floating point is exposed through this property [`SystemInfo.FloatingPointSupport`](https://docs.nanoframework.net/api/nanoFramework.Runtime.Native.SystemInfo.html#nanoFramework_Runtime_Native_SystemInfo_FloatingPointSupport). 
 ## Feedback and documentation
 
 For documentation, providing feedback, issues and finding out how to contribute please refer to the [Home repo](https://github.com/nanoframework/Home).
