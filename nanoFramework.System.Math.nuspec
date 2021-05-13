@@ -16,11 +16,12 @@
     <icon>images\nf-logo.png</icon>
     <repository type="git" url="https://github.com/nanoframework/nanoFramework.System.Math" commit="$commit$" />
     <copyright>Copyright (c) .NET Foundation and Contributors</copyright>
-    <description>This package includes the nanoFramework.System.Math assembly for .NET nanoFramework C# projects.&#10;This package requires a target with nanoFramework.System.Math v$nativeVersion$ (checksum $checksum$).</description>
+    <description>This package includes the nanoFramework.System.Math assembly for .NET nanoFramework C# projects.
+This package requires a target with nanoFramework.System.Math v$nativeVersion$ (checksum $checksum$).</description>
     <summary>nanoFramework.System.Math assembly for .NET nanoFramework C# projects</summary>
     <tags>nanoFramework C# csharp netmf netnf nanoFramework.System.Math</tags>
     <dependencies>
-      <dependency id="nanoFramework.CoreLibrary" version="1.10.3-preview.20" />
+      <dependency id="nanoFramework.CoreLibrary" version="1.10.4-preview.4" />
     </dependencies>
   </metadata>
   <files>
@@ -29,7 +30,6 @@
     <file src="nanoFramework.System.Math\bin\Release\System.Math.pdbx" target="lib\System.Math.pdbx" />
     <file src="nanoFramework.System.Math\bin\Release\System.Math.pe" target="lib\System.Math.pe" />
     <file src="nanoFramework.System.Math\bin\Release\System.Math.xml" target="lib\System.Math.xml" />
-
     <file src="assets\readme.txt" target="" />
     <file src="assets\nf-logo.png" target="images" />
     <file src="LICENSE.md" target="" />
