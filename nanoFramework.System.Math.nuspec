@@ -21,7 +21,7 @@ This package requires a target with nanoFramework.System.Math v$nativeVersion$ (
     <summary>nanoFramework.System.Math assembly for .NET nanoFramework C# projects</summary>
     <tags>nanoFramework C# csharp netmf netnf nanoFramework.System.Math</tags>
     <dependencies>
-      <dependency id="nanoFramework.CoreLibrary" version="1.10.4-preview.4" />
+      <dependency id="nanoFramework.CoreLibrary" version="1.10.4-preview.11" />
     </dependencies>
   </metadata>
   <files>
