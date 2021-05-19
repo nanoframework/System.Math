@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/nanoFramework.System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.1...HEAD)
+[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.3...HEAD)
+
+**Documentation and other chores:**
+
+- Bumps nanoFramework.CoreLibrary from 1.10.4-preview.4 to 1.10.4-preview.11 [\#65](https://github.com/nanoframework/nanoFramework.System.Math/pull/65)
+
+## [v1.4.0-preview.3](https://github.com/nanoframework/nanoFramework.System.Math/tree/v1.4.0-preview.3) (2021-05-13)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.1...v1.4.0-preview.3)
 
 **Documentation and other chores:**
 
