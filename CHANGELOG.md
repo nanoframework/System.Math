@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/nanoFramework.System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.3...HEAD)
+[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.5...HEAD)
+
+**Implemented enhancements:**
+
+- Add back Abs\(float\) [\#66](https://github.com/nanoframework/nanoFramework.System.Math/pull/66)
+
+## [v1.4.0-preview.5](https://github.com/nanoframework/nanoFramework.System.Math/tree/v1.4.0-preview.5) (2021-05-19)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.3...v1.4.0-preview.5)
 
 **Documentation and other chores:**
 
