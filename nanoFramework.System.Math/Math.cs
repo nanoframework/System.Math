@@ -25,16 +25,6 @@ namespace System
         public const double E = 2.7182818284590452354;
 
         /// <summary>
-        /// Returns the absolute value of a 32-bit signed integer.
-        /// </summary>
-        /// <param name="val">A number that is greater than Int32..::..MinValue, but less than or equal to Int32..::..MaxValue.</param>
-        /// <returns>A 32-bit signed integer, x, such that 0 ≤ x ≤ Int32..::..MaxValue.</returns>
-        public static int Abs(int val)
-        {
-            return MathInternal.Abs(val);
-        }
-
-        /// <summary>
         /// Returns the larger of two 32-bit signed integers.
         /// </summary>
         /// <param name="val1">The first of two 32-bit signed integers to compare. </param>
@@ -57,6 +47,16 @@ namespace System
         }
 
         /// <summary>
+        /// Returns the absolute value of a 32-bit signed integer.
+        /// </summary>
+        /// <param name="val">A number that is greater than Int32..::..MinValue, but less than or equal to Int32..::..MaxValue.</param>
+        /// <returns>A 32-bit signed integer, x, such that 0 ≤ x ≤ Int32..::..MaxValue.</returns>
+        public static int Abs(int val)
+        {
+            return MathInternal.Abs(val);
+        }
+
+        /// <summary>
         /// Returns the absolute value of a double-precision floating-point number.
         /// </summary>
         /// <param name="val">A number that is greater than or equal to Double..::..MinValue, but less than or equal to Double..::..MaxValue.</param>
@@ -67,6 +67,14 @@ namespace System
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern double Abs(double val);
+
+        /// <summary>
+        /// Returns the absolute value of a single-precision floating-point number.
+        /// </summary>
+        /// <param name="val">A number that is greater than or equal to MinValue, but less than or equal to MaxValue.</param>
+        /// <returns>A single-precision floating-point number, x, such that 0 ≤ x ≤ MaxValue.</returns>
+        [MethodImpl(MethodImplOptions.InternalCall)]
+        public static extern float Abs(float val);
 
         /// <summary>
         /// Returns the angle whose cosine is the specified number.
