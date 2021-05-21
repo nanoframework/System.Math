@@ -512,7 +512,7 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static extern int Sign(float value);
+        public static int Sign(float value);
 
         /// <summary>
         /// Returns the sine of the specified angle.
