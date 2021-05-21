@@ -543,7 +543,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static int Sign(float value)
         {
             return Sign(value);
