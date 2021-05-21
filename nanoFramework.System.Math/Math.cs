@@ -730,7 +730,7 @@ namespace System
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Truncate(float d)
         {
-            Truncate(d);
+            return Truncate(d);
         }
     }
 }
