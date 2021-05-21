@@ -98,7 +98,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Acos(float d)
         {
             return Acos(d);
@@ -126,7 +125,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Asin(float d)
         {
             return Asin(d);
@@ -154,7 +152,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Atan(float d)
         {
             return Atan(d);
@@ -184,7 +181,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Atan2(float y, float x)
         {
             return Atan2(y, x);
@@ -212,7 +208,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Ceiling(float d)
         {
             return Ceiling(d);
@@ -240,7 +235,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Cos(float a)
         {
             return Cos(a);
@@ -268,7 +262,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Cosh(float a)
         {
             return Cosh(a);
@@ -302,7 +295,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float IEEERemainder(float x, float y)
         {
             return IEEERemainder(x, y);
@@ -330,7 +322,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Exp(float d)
         {
             return Exp(d);
@@ -358,7 +349,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Floor(float d)
         {
             return Floor(d);
@@ -386,7 +376,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Log(float d)
         {
             return Log(d);
@@ -413,7 +402,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Log10(float d)
         {
             return Log10(d);
@@ -443,7 +431,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Max(float x, float y)
         {
             return Max(x, y);
@@ -473,7 +460,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Min(float x, float y)
         {
             return Min(x, y);
@@ -503,7 +489,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Pow(float x, float y)
         {
             return Pow(x, y);
@@ -531,7 +516,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Round(float d)
         {
             return Round(d);
@@ -587,7 +571,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Sin(float a)
         {
             return Sin(a);
@@ -615,7 +598,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Sinh(float value)
         {
             return Sinh(value);
@@ -643,7 +625,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Sqrt(float d)
         {
             return Sqrt(d);
@@ -671,7 +652,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Tan(float a)
         {
             return Tan(a);
@@ -699,7 +679,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Tanh(float value)
         {
             return Tanh(value);
@@ -727,7 +706,6 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Truncate(float d)
         {
             return Truncate(d);
