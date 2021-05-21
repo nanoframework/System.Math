@@ -101,7 +101,7 @@ namespace System
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static float Acos(float d)
         {
-            return (Acos(d));
+            return Acos(d);
         }
 
         /// <summary>
