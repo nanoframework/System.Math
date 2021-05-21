@@ -99,7 +99,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Acos(float d);
+        public static float Acos(float d)
+        {
+            return (Acos(d));
+        }
 
         /// <summary>
         /// Returns the angle whose sine is the specified number.
@@ -124,7 +127,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Asin(float d);
+        public static float Asin(float d)
+        {
+            return Asin(d);
+        }
 
         /// <summary>
         /// Returns the angle whose tangent is the specified number.
@@ -149,7 +155,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Atan(float d);
+        public static float Atan(float d)
+        {
+            return Atan(d);
+        }
 
         /// <summary>
         /// Returns the angle whose tangent is the quotient of two specified numbers.
@@ -176,7 +185,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Atan2(float y, float x);
+        public static float Atan2(float y, float x)
+        {
+            return Atan2(y, x);
+        }
 
         /// <summary>
         /// Returns the smallest integral value that is greater than or equal to the specified double-precision floating-point number.
@@ -201,7 +213,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Ceiling(float d);
+        public static float Ceiling(float d)
+        {
+            return Ceiling(d);
+        }
 
         /// <summary>
         /// Returns the cosine of the specified angle.
@@ -226,7 +241,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Cos(float a);
+        public static float Cos(float a)
+        {
+            return Cos(a);
+        }
 
         /// <summary>
         /// Returns the hyperbolic cosine of the specified angle.
@@ -251,7 +269,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Cosh(float a);
+        public static float Cosh(float a)
+        {
+            return Cosh(a);
+        }
 
         /// <summary>
         /// Returns the remainder resulting from the division of a specified number by another specified number.
@@ -282,7 +303,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float IEEERemainder(float x, float y);
+        public static float IEEERemainder(float x, float y)
+        {
+            return IEEERemainder(x, y);
+        }
 
         /// <summary>
         /// Returns e raised to the specified power.
@@ -307,7 +331,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Exp(float d);
+        public static float Exp(float d)
+        {
+            return Exp(d);
+        }
 
         /// <summary>
         /// Returns the largest integer less than or equal to the specified double-precision floating-point number.
@@ -332,7 +359,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Floor(float d);
+        public static float Floor(float d)
+        {
+            return Floor(d);
+        }
 
         /// <summary>
         /// Returns the natural (base e) logarithm of a specified number.
@@ -357,7 +387,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Log(float d);
+        public static float Log(float d)
+        {
+            return Log(d);
+        }
 
         /// <summary>
         /// Returns the base 10 logarithm of a specified number.
@@ -381,7 +414,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Log10(float d);
+        public static float Log10(float d)
+        {
+            return Log10(d);
+        }
 
         /// <summary>
         /// Returns the larger of two double-precision floating-point numbers.
@@ -408,7 +444,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Max(float x, float y);
+        public static float Max(float x, float y)
+        {
+            return Max(x, y);
+        }
 
         /// <summary>
         /// Returns the smaller of two double-precision floating-point numbers.
@@ -435,7 +474,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Min(float x, float y);
+        public static float Min(float x, float y)
+        {
+            return Min(x, y);
+        }
 
         /// <summary>
         /// Returns a specified number raised to the specified power.
@@ -462,7 +504,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Pow(float x, float y);
+        public static float Pow(float x, float y)
+        {
+            return Pow(x, y);
+        }
 
         /// <summary>
         /// Rounds a double-precision floating-point value to the nearest integral value.
@@ -487,7 +532,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Round(float d);
+        public static float Round(float d)
+        {
+            return Round(d);
+        }
 
         /// <summary>
         /// Returns a value indicating the sign of a double-precision floating-point number.
@@ -512,7 +560,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static int Sign(float value);
+        public static int Sign(float value)
+        {
+            return Sign(value);
+        }
 
         /// <summary>
         /// Returns the sine of the specified angle.
@@ -537,7 +588,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Sin(float a);
+        public static float Sin(float a)
+        {
+            return Sin(a);
+        }
 
         /// <summary>
         /// Returns the hyperbolic sine of the specified angle.
@@ -562,7 +616,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Sinh(float value);
+        public static float Sinh(float value)
+        {
+            return Sinh(value);
+        }
 
         /// <summary>
         /// Returns the square root of a specified number.
@@ -587,7 +644,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Sqrt(float d);
+        public static float Sqrt(float d)
+        {
+            return Sqrt(d);
+        }
 
         /// <summary>
         /// Returns the tangent of the specified angle.
@@ -612,7 +672,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Tan(float a);
+        public static float Tan(float a)
+        {
+            return Tan(a);
+        }
 
         /// <summary>
         /// Returns the hyperbolic tangent of the specified angle.
@@ -637,7 +700,10 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Tanh(float value);
+        public static float Tanh(float value)
+        {
+            return Tanh(value);
+        }
 
         /// <summary>
         /// Calculates the integral part of a specified double-precision floating-point number.
@@ -662,6 +728,9 @@ namespace System
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
         [MethodImpl(MethodImplOptions.InternalCall)]
-        public static float Truncate(float d);
+        public static float Truncate(float d)
+        {
+            Truncate(d);
+        }
     }
 }
