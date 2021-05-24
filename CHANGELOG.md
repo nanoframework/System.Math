@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/nanoFramework.System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.5...HEAD)
+[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.7...HEAD)
+
+**Fixed bugs:**
+
+- Readd float functions [\#67](https://github.com/nanoframework/nanoFramework.System.Math/pull/67)
+
+## [v1.4.0-preview.7](https://github.com/nanoframework/nanoFramework.System.Math/tree/v1.4.0-preview.7) (2021-05-20)
+
+[Full Changelog](https://github.com/nanoframework/nanoFramework.System.Math/compare/v1.4.0-preview.5...v1.4.0-preview.7)
 
 **Implemented enhancements:**
 
