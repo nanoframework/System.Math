@@ -98,10 +98,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Acos(float d)
         {
-            return Acos(d);
+            return (float)Acos((double)d);
         }
 
         /// <summary>
@@ -126,10 +126,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Asin(float d)
         {
-            return Asin(d);
+            return (float)Asin((double)d);
         }
 
         /// <summary>
@@ -154,10 +154,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Atan(float d)
         {
-            return Atan(d);
+            return (float)Atan((double)d);
         }
 
         /// <summary>
@@ -184,10 +184,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Atan2(float y, float x)
         {
-            return Atan2(y, x);
+            return (float)Atan2((double)y, x);
         }
 
         /// <summary>
@@ -212,10 +212,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Ceiling(float d)
         {
-            return Ceiling(d);
+            return (float)Ceiling((double)d);
         }
 
         /// <summary>
@@ -240,10 +240,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Cos(float a)
         {
-            return Cos(a);
+            return (float)Cos((double)a);
         }
 
         /// <summary>
@@ -268,10 +268,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Cosh(float a)
         {
-            return Cosh(a);
+            return (float)Cosh((double)a);
         }
 
         /// <summary>
@@ -302,10 +302,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float IEEERemainder(float x, float y)
         {
-            return IEEERemainder(x, y);
+            return (float)IEEERemainder((double)x, y);
         }
 
         /// <summary>
@@ -330,10 +330,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Exp(float d)
         {
-            return Exp(d);
+            return (float)Exp((double)d);
         }
 
         /// <summary>
@@ -358,10 +358,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Floor(float d)
         {
-            return Floor(d);
+            return (float)Floor((double)d);
         }
 
         /// <summary>
@@ -386,10 +386,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Log(float d)
         {
-            return Log(d);
+            return (float)Log((double)d);
         }
 
         /// <summary>
@@ -413,10 +413,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Log10(float d)
         {
-            return Log10(d);
+            return (float)Log10((double)d);
         }
 
         /// <summary>
@@ -443,10 +443,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Max(float x, float y)
         {
-            return Max(x, y);
+            return (float)Max((double)x, y);
         }
 
         /// <summary>
@@ -473,10 +473,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Min(float x, float y)
         {
-            return Min(x, y);
+            return (float)Min((double)x, y);
         }
 
         /// <summary>
@@ -503,10 +503,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Pow(float x, float y)
         {
-            return Pow(x, y);
+            return (float)Pow((double)x, y);
         }
 
         /// <summary>
@@ -531,10 +531,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Round(float d)
         {
-            return Round(d);
+            return (float)Round((double)d);
         }
 
         /// <summary>
@@ -559,10 +559,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static int Sign(float value)
         {
-            return Sign(value);
+            return Sign((double)value);
         }
 
         /// <summary>
@@ -587,7 +587,7 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Sin(float a)
         {
             return Sin(a);
@@ -615,10 +615,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Sinh(float value)
         {
-            return Sinh(value);
+            return (float)Sinh((double)value);
         }
 
         /// <summary>
@@ -643,10 +643,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Sqrt(float d)
         {
-            return Sqrt(d);
+            return (float)Sqrt((double)d);
         }
 
         /// <summary>
@@ -671,10 +671,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Tan(float a)
         {
-            return Tan(a);
+            return (float)Tan((double)a);
         }
 
         /// <summary>
@@ -699,10 +699,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Tanh(float value)
         {
-            return Tanh(value);
+            return (float)Tanh((double)value);
         }
 
         /// <summary>
@@ -727,10 +727,10 @@ namespace System
         /// It might not be available in all platforms or with firmware images that where build with double point FPU option. 
         /// </remarks>
         /// <exception cref="NotImplementedException"/>
-        [ObsoleteAttribute("This method is obsolete. Call using type Double instead.", true)]
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Truncate(float d)
         {
-            return Truncate(d);
+            return (float)Truncate((double)d);
         }
     }
 }
