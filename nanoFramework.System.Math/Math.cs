@@ -590,7 +590,7 @@ namespace System
         [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Sin(float a)
         {
-            return Sin(a);
+            return (float)Sin((double)a);
         }
 
         /// <summary>
