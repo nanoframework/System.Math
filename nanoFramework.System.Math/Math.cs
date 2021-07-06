@@ -477,7 +477,6 @@ namespace System
         /// </summary>
         /// <param name="a">An angle, measured in radians. </param>
         /// <returns>The tangent of a. If a is equal to NaN, NegativeInfinity, or PositiveInfinity, this method returns NaN.</returns>
-        /// <remarks>
         [Obsolete("This method is obsolete. Call using type Double instead.", true)]
         public static float Tan(float a)
         {
