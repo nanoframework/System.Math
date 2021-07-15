@@ -10,8 +10,8 @@
 
 | Component | Build Status | NuGet Package |
 |:-|---|---|
-| nanoFramework.System.Math | [![Build Status](https://dev.azure.com/nanoframework/nanoFramework.System.Math/_apis/build/status/System.Math?repoName=nanoframework%2FSystem.Math&branchName=main)](https://dev.azure.com/nanoframework/nanoFramework.System.Math/_build/latest?definitionId=10&repoName=nanoframework%2FSystem.Math&branchName=main) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.System.Math.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Math/) |
-| nanoFramework.System.Math (preview) | [![Build Status](https://dev.azure.com/nanoframework/nanoFramework.System.Math/_apis/build/status/System.Math?repoName=nanoframework%2FSystem.Math&branchName=develop)](https://dev.azure.com/nanoframework/nanoFramework.System.Math/_build/latest?definitionId=10&repoName=nanoframework%2FSystem.Math&branchName=develop) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.Math.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Math/) |
+| nanoFramework.System.Math | [![Build Status](https://dev.azure.com/nanoframework/System.Math/_apis/build/status/System.Math?repoName=nanoframework%2FSystem.Math&branchName=main)](https://dev.azure.com/nanoframework/System.Math/_build/latest?definitionId=10&repoName=nanoframework%2FSystem.Math&branchName=main) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.System.Math.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Math/) |
+| nanoFramework.System.Math (preview) | [![Build Status](https://dev.azure.com/nanoframework/System.Math/_apis/build/status/System.Math?repoName=nanoframework%2FSystem.Math&branchName=develop)](https://dev.azure.com/nanoframework/System.Math/_build/latest?definitionId=10&repoName=nanoframework%2FSystem.Math&branchName=develop) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.Math.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Math/) |
 
 ## Available APIs and floating-point implementations
 
