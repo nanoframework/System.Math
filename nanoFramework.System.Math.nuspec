@@ -10,6 +10,7 @@
     <license type="file">LICENSE.md</license>
     <releaseNotes>
     </releaseNotes>
+    <readme>docs\README.md</readme>
     <developmentDependency>false</developmentDependency>
     <projectUrl>https://github.com/nanoframework/System.Math</projectUrl>
     <iconUrl>https://secure.gravatar.com/avatar/97d0e092247f0716db6d4b47b7d1d1ad</iconUrl>
@@ -29,6 +30,7 @@
     <file src="nanoFramework.System.Math\bin\Release\System.Math.pe" target="lib\System.Math.pe" />
     <file src="nanoFramework.System.Math\bin\Release\System.Math.xml" target="lib\System.Math.xml" />
     <file src="assets\readme.txt" target="" />
+    <file src="README.md" target="docs\" />
     <file src="assets\nf-logo.png" target="images" />
     <file src="LICENSE.md" target="" />
   </files>
