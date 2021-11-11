@@ -16,9 +16,7 @@
     <icon>images\nf-logo.png</icon>
     <repository type="git" url="https://github.com/nanoframework/System.Math" commit="$commit$" />
     <copyright>Copyright (c) .NET Foundation and Contributors</copyright>
-    <description>This package includes the nanoFramework.System.Math assembly for .NET nanoFramework C# projects.
-This package requires a target with System.Math v$nativeVersion$ (checksum $checksum$).</description>
-    <summary>nanoFramework.System.Math assembly for .NET nanoFramework C# projects</summary>
+    <description>This package includes the nanoFramework.System.Math assembly for .NET nanoFramework C# projects.&#10;This package requires a target with System.Math v$nativeVersion$ (checksum $checksum$).</description>
     <tags>nanoFramework C# csharp netmf netnf nanoFramework.System.Math</tags>
     <dependencies>
       <dependency id="nanoFramework.CoreLibrary" version="1.10.5" />
