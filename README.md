@@ -4,7 +4,7 @@
 
 -----
 
-### Welcome to the **nanoFramework** System.Math Class Library repository!
+### Welcome to the .NET **nanoFramework** System.Math Class Library repository
 
 ## Build status
 
@@ -16,7 +16,7 @@
 ## Available APIs and floating-point implementations
 
 The .NET [System.Math](https://docs.microsoft.com/en-us/dotnet/api/system.math) APIs are available with `double` parameters. No sweat for the CPUs where the code usually runs.
-When we move to embedded systems that's a totally different story. 
+When we move to embedded systems that's a totally different story.
 
 A few more details to properly set context:
 
@@ -30,7 +30,8 @@ Adding to the above, the extra precision provided by the `double` type is seldom
 
 Considering all this and the ongoing quest to save flash space, despite System.Math API offering `double` type parameters, the type handling at the native code will depend on build options of the firmware. The default implementation works with `float` under the hood. There is a build option (`DP_FLOATINGPOINT`) to build the image with DP floating point, which should be used when 'that' extra precision is required.
 
-In case this is relevant, the capability of dealing with double floating point is exposed through this property [`SystemInfo.FloatingPointSupport`](https://docs.nanoframework.net/api/nanoFramework.Runtime.Native.SystemInfo.html#nanoFramework_Runtime_Native_SystemInfo_FloatingPointSupport). 
+In case this is relevant, the capability of dealing with double floating point is exposed through this property [`SystemInfo.FloatingPointSupport`](https://docs.nanoframework.net/api/nanoFramework.Runtime.Native.SystemInfo.html#nanoFramework_Runtime_Native_SystemInfo_FloatingPointSupport).
+
 ## Feedback and documentation
 
 For documentation, providing feedback, issues and finding out how to contribute please refer to the [Home repo](https://github.com/nanoframework/Home).
@@ -47,7 +48,7 @@ The **nanoFramework** Class Libraries are licensed under the [MIT license](LICEN
 
 ## Code of Conduct
 
-This project has adopted the code of conduct defined by the Contributor Covenant to clarify expected behavior in our community.
+This project has adopted the code of conduct defined by the Contributor Covenant to clarify expected behaviour in our community.
 For more information see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
 
 ### .NET Foundation
