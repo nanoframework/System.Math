@@ -36,6 +36,29 @@ namespace System
         }
 
         /// <summary>
+        /// Returns the larger of two double-precision floating-point numbers.
+        /// </summary>
+        /// <param name="x">The first of two double-precision floating-point numbers to compare. </param>
+        /// <param name="y">The second of two double-precision floating-point numbers to compare. </param>
+        /// <returns>Parameter x or y, whichever is larger. If x, y, or both x and y are equal to NaN, NaN is returned.</returns>
+        [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
+        public static extern double Max(double x, double y);
+#pragma warning restore S4200 // Native methods should be wrapped
+
+        /// <summary>
+        /// Returns the larger of two single-precision floating-point numbers.
+        /// </summary>
+        /// <param name="x">The first of two single-precision floating-point numbers to compare. </param>
+        /// <param name="y">The second of two single-precision floating-point numbers to compare. </param>
+        /// <returns>Parameter x or y, whichever is larger. If x, y, or both x and y are equal to NaN, NaN is returned.</returns>
+        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
+        public static float Max(float x, float y)
+        {
+            return (float)Max((double)x, y);
+        }
+
+        /// <summary>
         /// Returns the smaller of two 32-bit signed integers.
         /// </summary>
         /// <param name="val1">The first of two 32-bit signed integers to compare. </param>
@@ -44,6 +67,28 @@ namespace System
         public static int Min(int val1, int val2)
         {
             return MathInternal.Min(val1, val2);
+        }
+
+        /// <summary>
+        /// Returns the smaller of two double-precision floating-point numbers.
+        /// </summary>
+        /// <param name="x">The first of two double-precision floating-point numbers to compare. </param>
+        /// <param name="y">The second of two double-precision floating-point numbers to compare. </param>
+        /// <returns>Parameter x or y, whichever is smaller. If x, y, or both x and y are equal to NaN, NaN is returned.</returns>
+        [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
+        public static extern double Min(double x, double y);
+#pragma warning restore S4200 // Native methods should be wrapped
+
+        /// <summary>
+        /// Returns the smaller of two single-precision floating-point numbers.
+        /// </summary>
+        /// <param name="x">The first of two single-precision floating-point numbers to compare. </param>
+        /// <param name="y">The second of two single-precision floating-point numbers to compare. </param>
+        /// <returns>Parameter x or y, whichever is smaller. If x, y, or both x and y are equal to NaN, NaN is returned.</returns>
+        public static float Min(float x, float y)
+        {
+            return (float)Min((double)x, y);
         }
 
         /// <summary>
@@ -62,7 +107,9 @@ namespace System
         /// <param name="val">A number that is greater than or equal to Double..::..MinValue, but less than or equal to Double..::..MaxValue.</param>
         /// <returns>A double-precision floating-point number, x, such that 0 ≤ x ≤ Double..::..MaxValue.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Abs(double val);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the absolute value of a single-precision floating-point number.
@@ -70,7 +117,9 @@ namespace System
         /// <param name="val">A number that is greater than or equal to MinValue, but less than or equal to MaxValue.</param>
         /// <returns>A single-precision floating-point number, x, such that 0 ≤ x ≤ MaxValue.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern float Abs(float val);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the angle whose cosine is the specified number.
@@ -78,7 +127,9 @@ namespace System
         /// <param name="d">A number representing a cosine, where d must be greater than or equal to -1, but less than or equal to 1. </param>
         /// <returns>An angle, θ, measured in radians, such that 0 ≤ θ ≤ π -or- NaN if d &lt; -1 or d > 1 or d equals NaN.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Acos(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the angle whose cosine is the specified number.
@@ -97,7 +148,9 @@ namespace System
         /// <param name="d">A number representing a sine, where d must be greater than or equal to -1, but less than or equal to 1.</param>
         /// <returns>An angle, θ, measured in radians, such that -π/2 ≤ θ ≤ π/2 -or- NaN if d &lt; -1 or d> 1 or d equals NaN.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Asin(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the angle whose sine is the specified number.
@@ -116,7 +169,9 @@ namespace System
         /// <param name="d">A number representing a tangent. </param>
         /// <returns>An angle, θ, measured in radians, such that -π/2 ≤ θ ≤ π/2. -or- NaN if d equals NaN, -π/2 rounded to double precision(-1.5707963267949) if d equals NegativeInfinity, or π/2 rounded to double precision(1.5707963267949) if d equals PositiveInfinity.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Atan(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the angle whose tangent is the specified number.
@@ -136,7 +191,9 @@ namespace System
         /// <param name="x">The x coordinate of a point. </param>
         /// <returns>An angle, θ, measured in radians, such that -π ≤ θ ≤ π, and tan(θ) = y / x, where (x, y) is a point in the Cartesian plane.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Atan2(double y, double x);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the angle whose tangent is the quotient of two specified numbers.
@@ -156,7 +213,9 @@ namespace System
         /// <param name="d">A double-precision floating-point number. </param>
         /// <returns>The smallest integral value that is greater than or equal to d. If d is equal to NaN, NegativeInfinity, or PositiveInfinity, that value is returned. Note that this method returns a Double instead of an integral type.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Ceiling(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the smallest integral value that is greater than or equal to the specified single-precision floating-point number.
@@ -175,7 +234,9 @@ namespace System
         /// <param name="a">An angle, measured in radians. </param>
         /// <returns>The cosine of a. If a is equal to NaN, NegativeInfinity, or PositiveInfinity, this method returns NaN.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Cos(double a);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the cosine of the specified angle.
@@ -194,7 +255,9 @@ namespace System
         /// <param name="a">An angle, measured in radians. </param>
         /// <returns>The hyperbolic cosine of val. If val is equal to NegativeInfinity or PositiveInfinity, PositiveInfinity is returned. If value is equal to NaN, NaN is returned.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Cosh(double a);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the hyperbolic cosine of the specified angle.
@@ -216,7 +279,9 @@ namespace System
         /// If x - (y Q) is zero, the value +0 is returned if x is positive, or -0 if x is negative.
         /// If y = 0, NaN is returned.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double IEEERemainder(double x, double y);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the remainder resulting from the division of a specified number by another specified number.
@@ -238,7 +303,9 @@ namespace System
         /// <param name="d">A number specifying a power. </param>
         /// <returns>The number e raised to the power d. If d equals NaN or PositiveInfinity, that value is returned. If d equals NegativeInfinity, 0 is returned.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Exp(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns e raised to the specified power.
@@ -257,7 +324,9 @@ namespace System
         /// <param name="d">A double-precision floating-point number. </param>
         /// <returns>The largest integer less than or equal to d. If d is equal to NaN, NegativeInfinity, or PositiveInfinity, that value is returned.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Floor(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the largest integer less than or equal to the specified single-precision floating-point number.
@@ -276,7 +345,9 @@ namespace System
         /// <param name="d">The number whose logarithm is to be found. </param>
         /// <returns>The natural logarithm of d; that is, ln d, or log e d</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Log(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the natural (base e) logarithm of a specified number.
@@ -295,7 +366,9 @@ namespace System
         /// <param name="d">A number whose logarithm is to be found. </param>
         /// <returns>The base 10 log of d; that is, log 10 d.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Log10(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the base 10 logarithm of a specified number.
@@ -309,54 +382,15 @@ namespace System
         }
 
         /// <summary>
-        /// Returns the larger of two double-precision floating-point numbers.
-        /// </summary>
-        /// <param name="x">The first of two double-precision floating-point numbers to compare. </param>
-        /// <param name="y">The second of two double-precision floating-point numbers to compare. </param>
-        /// <returns>Parameter x or y, whichever is larger. If x, y, or both x and y are equal to NaN, NaN is returned.</returns>
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        public static extern double Max(double x, double y);
-
-        /// <summary>
-        /// Returns the larger of two single-precision floating-point numbers.
-        /// </summary>
-        /// <param name="x">The first of two single-precision floating-point numbers to compare. </param>
-        /// <param name="y">The second of two single-precision floating-point numbers to compare. </param>
-        /// <returns>Parameter x or y, whichever is larger. If x, y, or both x and y are equal to NaN, NaN is returned.</returns>
-        [Obsolete("This method is obsolete. Call using type Double instead.", true)]
-        public static float Max(float x, float y)
-        {
-            return (float)Max((double)x, y);
-        }
-
-        /// <summary>
-        /// Returns the smaller of two double-precision floating-point numbers.
-        /// </summary>
-        /// <param name="x">The first of two double-precision floating-point numbers to compare. </param>
-        /// <param name="y">The second of two double-precision floating-point numbers to compare. </param>
-        /// <returns>Parameter x or y, whichever is smaller. If x, y, or both x and y are equal to NaN, NaN is returned.</returns>
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        public static extern double Min(double x, double y);
-
-        /// <summary>
-        /// Returns the smaller of two single-precision floating-point numbers.
-        /// </summary>
-        /// <param name="x">The first of two single-precision floating-point numbers to compare. </param>
-        /// <param name="y">The second of two single-precision floating-point numbers to compare. </param>
-        /// <returns>Parameter x or y, whichever is smaller. If x, y, or both x and y are equal to NaN, NaN is returned.</returns>
-        public static float Min(float x, float y)
-        {
-            return (float)Min((double)x, y);
-        }
-
-        /// <summary>
         /// Returns a specified number raised to the specified power.
         /// </summary>
         /// <param name="x">A double-precision floating-point number to be raised to a power. </param>
         /// <param name="y">A double-precision floating-point number that specifies a power. </param>
         /// <returns>The number x raised to the power y.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Pow(double x, double y);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns a specified number raised to the specified power.
@@ -376,7 +410,9 @@ namespace System
         /// <param name="d">A double-precision floating-point number to be rounded.</param>
         /// <returns>The integer nearest d. If the fractional component of d is halfway between two integers, one of which is even and the other odd, then the even number is returned. Note that this method returns a Double instead of an integral type.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Round(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Rounds a single-precision floating-point value to the nearest integral value.
@@ -395,7 +431,9 @@ namespace System
         /// <param name="value">A signed number. </param>
         /// <returns>A number that indicates the sign of value.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern int Sign(double value);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns a value indicating the sign of a single-precision floating-point number.
@@ -413,7 +451,9 @@ namespace System
         /// <param name="a">An angle, measured in radians. </param>
         /// <returns>The sine of a. If a is equal to NaN, NegativeInfinity, or PositiveInfinity, this method returns NaN.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Sin(double a);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the sine of the specified angle.
@@ -432,7 +472,9 @@ namespace System
         /// <param name="value">An angle, measured in radians. </param>
         /// <returns>The hyperbolic sine of value. If value is equal to NegativeInfinity, PositiveInfinity, or NaN, this method returns a Double equal to value.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Sinh(double value);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the hyperbolic sine of the specified angle.
@@ -451,7 +493,9 @@ namespace System
         /// <param name="d">The number whose square root is to be found. </param>
         /// <returns>The positive square root of d.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Sqrt(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the square root of a specified number.
@@ -470,7 +514,9 @@ namespace System
         /// <param name="a">An angle, measured in radians. </param>
         /// <returns>The tangent of a. If a is equal to NaN, NegativeInfinity, or PositiveInfinity, this method returns NaN.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Tan(double a);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the tangent of the specified angle.
@@ -489,7 +535,9 @@ namespace System
         /// <param name="value">An angle, measured in radians. </param>
         /// <returns>The hyperbolic tangent of value. If value is equal to NegativeInfinity, this method returns -1. If value is equal to PositiveInfinity, this method returns 1. If value is equal to NaN, this method returns NaN.</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Tanh(double value);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Returns the hyperbolic tangent of the specified angle.
@@ -508,7 +556,9 @@ namespace System
         /// <param name="d">A number to truncate.</param>
         /// <returns>The integral part of d; that is, the number that remains after any fractional digits have been discarded</returns>
         [MethodImpl(MethodImplOptions.InternalCall)]
+#pragma warning disable S4200 // Native methods should be wrapped
         public static extern double Truncate(double d);
+#pragma warning restore S4200 // Native methods should be wrapped
 
         /// <summary>
         /// Calculates the integral part of a specified single-precision floating-point number.
