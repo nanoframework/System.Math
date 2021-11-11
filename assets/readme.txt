@@ -6,7 +6,7 @@
                                                                                
 ===================================================================================
 
-API docs: https://docs.nanoframework.net/api/nanoFramework.System.Math.html
+API docs: https://docs.nanoframework.net/api/System.Math.html
 
 Browse our samples repository: https://github.com/nanoframework/samples
 
