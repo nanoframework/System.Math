@@ -2,7 +2,19 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.1-preview.10...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.1...HEAD)
+
+**Documentation and other chores:**
+
+- Remove obsolete methods [\#80](https://github.com/nanoframework/System.Math/pull/80)
+
+## [v1.4.1](https://github.com/nanoframework/System.Math/tree/v1.4.1) (2021-07-15)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.1-preview.12...v1.4.1)
+
+## [v1.4.1-preview.12](https://github.com/nanoframework/System.Math/tree/v1.4.1-preview.12) (2021-07-14)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.1-preview.10...v1.4.1-preview.12)
 
 **Documentation and other chores:**
 
