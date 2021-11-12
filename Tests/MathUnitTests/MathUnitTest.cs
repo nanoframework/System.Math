@@ -167,6 +167,34 @@ namespace MathUnitTests
         }
 
         [TestMethod]
+        public static void Cbrt()
+        {
+            double[] d = new double[] { -3.1415926535897932, -2.7182818284590452, -2.3025850929940457, -1.5707963267948966, -1.0, -0.78539816339744831, -0.63661977236758134, -0.31830988618379067, -0.0, double.NaN, 0.0, 0.31830988618379067, 0.63661977236758134, 0.70710678118654752, 1.0, 1.1283791670955126, 1.4426950408889634, 2.3025850929940457, 3.1415926535897932, double.PositiveInfinity };
+            double[] answer = new double[] { -1.4645918875615233, -1.3956124250860895, -1.3205004784536852, -1.1624473515096265, -1.0, -0.92263507432201421, -0.86025401382809963, -0.68278406325529568, -0.0, double.NaN, 0.0, 0.68278406325529568, 0.86025401382809963, 0.89089871814033930, 1.0, 1.0410821966965807, 1.1299472763373901, 1.320500478453685, 1.4645918875615233, double.PositiveInfinity };
+            double res;
+
+            for (int i = 0; i < d.Length; i++)
+            {
+                res = Math.Cbrt(d[i]);
+
+                if (double.IsNaN(d[i]))
+                {
+                    Assert.True(double.IsNaN(res), $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
+
+                }
+                else if (double.IsPositiveInfinity(d[i]))
+                {
+                    Assert.True(double.IsPositiveInfinity(res), $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
+
+                }
+                else
+                {
+                    Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
+                }
+            }
+        }
+
+        [TestMethod]
         public static void Test_Not_Numbers()
         {
             double nan = 0.0 / 0.0;
@@ -472,7 +500,7 @@ namespace MathUnitTests
             }
 
             res = Math.IEEERemainder(3, 2); // x/y = 1.5, case of when x/y falls halfway between two integers
-            Assert.False((res -2)>0.0001d, $"IEEERemainder(...3,2) -- FAILED AT: {res}");
+            Assert.False((res - 2) > 0.0001d, $"IEEERemainder(...3,2) -- FAILED AT: {res}");
 
             res = Math.IEEERemainder(4, 2); // x/y = 2, case when x - (y Q) is zero, the value +0 is returned if x is positive
             Assert.Equal(res, 0, $"IEEERemainder(...4,2) -- FAILED AT: {res}");
@@ -970,7 +998,7 @@ namespace MathUnitTests
             }
 
             // pi/2 
-            res = Math.Tan(1.57079632679490000000); 
+            res = Math.Tan(1.57079632679490000000);
             Assert.False(double.IsNaN(res), $"Tan(...PI/2) -- FAILED AT: {res}");
 
             res = Math.Tan(double.NaN);
