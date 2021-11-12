@@ -348,24 +348,16 @@ namespace System
         /// -or-
         /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
         /// </returns>
-        public static byte Clamp(byte value, byte min, byte max) 
-        {
-            if(max < min)
-            {
-#pragma warning disable S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-                throw new ArgumentException();
-#pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-            }
-
-            if (value < min)
-            {
-                return min;
-            }
-            else
-            {
-                return (value > max) ? max : value;
-            }
-        }
+        public static byte Clamp(
+            byte value,
+            byte min,
+            byte max)
+#pragma warning disable IDE0004 // need to have the cast so this is calling the intended method
+       => (byte)Clamp(
+           (ulong)value,
+           (ulong)min,
+           (ulong)max);
+#pragma warning restore IDE0004
 
         /// <summary>
         /// Returns <paramref name="value"/> clamped to the inclusive range of <paramref name="min"/> and <paramref name="max"/>.
@@ -381,7 +373,10 @@ namespace System
         /// -or-
         /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
         /// </returns>
-        public static double Clamp(double value, double min, double max)
+        public static double Clamp(
+            double value,
+            double min,
+            double max)
         {
             if (max < min)
             {
@@ -389,18 +384,18 @@ namespace System
                 throw new ArgumentException();
 #pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
             }
-            
-            if(double.IsNaN(value))
+
+            if (double.IsNaN(value))
             {
                 return double.NaN;
             }
 
-            if(double.IsNaN(min) && double.IsNaN(max))
+            if (double.IsNaN(min) && double.IsNaN(max))
             {
                 return value;
             }
 
-            if(double.IsNaN(min) && !double.IsNaN(max))
+            if (double.IsNaN(min) && !double.IsNaN(max))
             {
                 return (value > max) ? max : value;
             }
@@ -441,7 +436,60 @@ namespace System
         /// -or-
         /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
         /// </returns>
-        public static short Clamp(short value, short min, short max)
+        public static short Clamp(
+            short value,
+            short min,
+            short max)
+#pragma warning disable IDE0004 // need to have the cast so this is calling the intended method
+       => (short)Clamp(
+           (long)value,
+           (long)min,
+           (long)max);
+#pragma warning restore IDE0004
+
+        /// <summary>
+        /// Returns <paramref name="value"/> clamped to the inclusive range of <paramref name="min"/> and <paramref name="max"/>.
+        /// </summary>
+        /// <param name="value">The value to be clamped.</param>
+        /// <param name="min">The lower bound of the result.</param>
+        /// <param name="max">The upper bound of the result.</param>
+        /// <exception cref="ArgumentException">If <paramref name="max"/> &lt; <paramref name="min"/>.</exception>
+        /// <returns>
+        /// <paramref name="value"/> if <paramref name="min"/> ≤ <paramref name="value"/> ≤ <paramref name="max"/>.
+        /// -or-
+        /// <paramref name="min"/> if <paramref name="value"/>&lt;<paramref name="min"/>.
+        /// -or-
+        /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
+        /// </returns>
+        public static int Clamp(
+            int value,
+            int min,
+            int max)
+#pragma warning disable IDE0004 // need to have the cast so this is calling the intended method
+        => (int)Clamp(
+            (long)value,
+            (long)min,
+            (long)max);
+#pragma warning restore IDE0004
+
+        /// <summary>
+        /// Returns <paramref name="value"/> clamped to the inclusive range of <paramref name="min"/> and <paramref name="max"/>.
+        /// </summary>
+        /// <param name="value">The value to be clamped.</param>
+        /// <param name="min">The lower bound of the result.</param>
+        /// <param name="max">The upper bound of the result.</param>
+        /// <exception cref="ArgumentException">If <paramref name="max"/> &lt; <paramref name="min"/>.</exception>
+        /// <returns>
+        /// <paramref name="value"/> if <paramref name="min"/> ≤ <paramref name="value"/> ≤ <paramref name="max"/>.
+        /// -or-
+        /// <paramref name="min"/> if <paramref name="value"/>&lt;<paramref name="min"/>.
+        /// -or-
+        /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
+        /// </returns>
+        public static long Clamp(
+            long value,
+            long min,
+            long max)
         {
             if (max < min)
             {
@@ -449,7 +497,7 @@ namespace System
                 throw new ArgumentException();
 #pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
             }
-            
+
             if (value < min)
             {
                 return min;
@@ -474,24 +522,17 @@ namespace System
         /// -or-
         /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
         /// </returns>
-        public static int Clamp(int value, int min, int max)
-        {
-            if (max < min)
-            {
-#pragma warning disable S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-                throw new ArgumentException();
-#pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-            }
+        public static sbyte Clamp(
+            sbyte value,
+            sbyte min,
+            sbyte max) =>
+#pragma warning disable IDE0004 // need to have the cast so this is calling the intended method
+            (sbyte)Clamp(
+                (long)value,
+                (long)min,
+                (long)max);
+#pragma warning restore IDE0004
 
-            if (value < min)
-            {
-                return min;
-            }
-            else
-            {
-                return (value > max) ? max : value;
-            }
-        }
 
         /// <summary>
         /// Returns <paramref name="value"/> clamped to the inclusive range of <paramref name="min"/> and <paramref name="max"/>.
@@ -507,73 +548,10 @@ namespace System
         /// -or-
         /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
         /// </returns>
-        public static long Clamp(long value, long min, long max)
-        {
-            if (max < min)
-            {
-#pragma warning disable S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-                throw new ArgumentException();
-#pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-            }
-            
-            if (value < min)
-            {
-                return min;
-            }
-            else
-            {
-                return (value > max) ? max : value;
-            }
-        }
-
-        /// <summary>
-        /// Returns <paramref name="value"/> clamped to the inclusive range of <paramref name="min"/> and <paramref name="max"/>.
-        /// </summary>
-        /// <param name="value">The value to be clamped.</param>
-        /// <param name="min">The lower bound of the result.</param>
-        /// <param name="max">The upper bound of the result.</param>
-        /// <exception cref="ArgumentException">If <paramref name="max"/> &lt; <paramref name="min"/>.</exception>
-        /// <returns>
-        /// <paramref name="value"/> if <paramref name="min"/> ≤ <paramref name="value"/> ≤ <paramref name="max"/>.
-        /// -or-
-        /// <paramref name="min"/> if <paramref name="value"/>&lt;<paramref name="min"/>.
-        /// -or-
-        /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
-        /// </returns>
-        public static sbyte Clamp(sbyte value, sbyte min, sbyte max)
-        {
-            if (max < min)
-            {
-#pragma warning disable S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-                throw new ArgumentException();
-#pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-            }
-            
-            if (value < min)
-            {
-                return min;
-            }
-            else
-            {
-                return (value > max) ? max : value;
-            }
-        }
-
-        /// <summary>
-        /// Returns <paramref name="value"/> clamped to the inclusive range of <paramref name="min"/> and <paramref name="max"/>.
-        /// </summary>
-        /// <param name="value">The value to be clamped.</param>
-        /// <param name="min">The lower bound of the result.</param>
-        /// <param name="max">The upper bound of the result.</param>
-        /// <exception cref="ArgumentException">If <paramref name="max"/> &lt; <paramref name="min"/>.</exception>
-        /// <returns>
-        /// <paramref name="value"/> if <paramref name="min"/> ≤ <paramref name="value"/> ≤ <paramref name="max"/>.
-        /// -or-
-        /// <paramref name="min"/> if <paramref name="value"/>&lt;<paramref name="min"/>.
-        /// -or-
-        /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
-        /// </returns>
-        public static float Clamp(float value, float min, float max)
+        public static float Clamp(
+            float value,
+            float min,
+            float max)
         {
             if (max < min)
             {
@@ -632,24 +610,17 @@ namespace System
         /// -or-
         /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
         /// </returns>
-        public static ushort Clamp(ushort value, ushort min, ushort max)
-        {
-            if (max < min)
-            {
-#pragma warning disable S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-                throw new ArgumentException();
-#pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-            }
-            
-            if (value < min)
-            {
-                return min;
-            }
-            else
-            {
-                return (value > max) ? max : value;
-            }
-        }
+        public static ushort Clamp(
+            ushort value,
+            ushort min,
+            ushort max) =>
+#pragma warning disable IDE0004 // need to have the cast so this is calling the intended method
+            (ushort)Clamp(
+                (ulong)value,
+                (ulong)min,
+                (ulong)max);
+#pragma warning restore IDE0004
+
 
         /// <summary>
         /// Returns <paramref name="value"/> clamped to the inclusive range of <paramref name="min"/> and <paramref name="max"/>.
@@ -665,24 +636,17 @@ namespace System
         /// -or-
         /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
         /// </returns>
-        public static uint Clamp(uint value, uint min, uint max)
-        {
-            if (max < min)
-            {
-#pragma warning disable S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-                throw new ArgumentException();
-#pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
-            }
-            
-            if (value < min)
-            {
-                return min;
-            }
-            else
-            {
-                return (value > max) ? max : value;
-            }
-        }
+        public static uint Clamp(
+            uint value,
+            uint min,
+            uint max) =>
+#pragma warning disable IDE0004 // need to have the cast so this is calling the intended method
+            (uint)Clamp(
+                (ulong)value,
+                (ulong)min,
+                (ulong)max);
+#pragma warning restore IDE0004
+
 
         /// <summary>
         /// Returns <paramref name="value"/> clamped to the inclusive range of <paramref name="min"/> and <paramref name="max"/>.
@@ -698,7 +662,10 @@ namespace System
         /// -or-
         /// max if <paramref name="max"/>&lt;<paramref name="value"/>.
         /// </returns>
-        public static ulong Clamp(ulong value, ulong min, ulong max)
+        public static ulong Clamp(
+            ulong value,
+            ulong min,
+            ulong max)
         {
             if (max < min)
             {
@@ -706,7 +673,7 @@ namespace System
                 throw new ArgumentException();
 #pragma warning restore S3928 // Parameter names used into ArgumentException constructors should match an existing one 
             }
-            
+
             if (value < min)
             {
                 return min;
