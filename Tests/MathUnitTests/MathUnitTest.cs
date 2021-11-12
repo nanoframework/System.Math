@@ -698,9 +698,8 @@ namespace MathUnitTests
             res = Math.Max(10, double.NaN);
             Assert.True(double.IsNaN(res), $"Max(...10,double.NaN) -- FAILED AT: {res}");
 
-            // TODO failing 
-            //res = Math.Max(double.NaN, 10);
-            //Assert.True(double.IsNaN(res), $"Max(...NaN, 10) -- FAILED AT: {res}");
+            res = Math.Max(double.NaN, 10);
+            Assert.True(double.IsNaN(res), $"Max(...NaN, 10) -- FAILED AT: {res}");
 
             res = Math.Max(double.NaN, double.NaN);
             Assert.True(double.IsNaN(res), $"Max(...NaN,double.NaN) -- FAILED AT:  {res}");
