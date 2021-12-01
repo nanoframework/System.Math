@@ -2,7 +2,16 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.5...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.7...HEAD)
+
+**Documentation and other chores:**
+
+- Update 2 nuget dependencies [\#87](https://github.com/nanoframework/System.Math/pull/87)
+- Add unit test for Max\(\) [\#85](https://github.com/nanoframework/System.Math/pull/85)
+
+## [v1.4.3-preview.7](https://github.com/nanoframework/System.Math/tree/v1.4.3-preview.7) (2021-11-12)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.5...v1.4.3-preview.7)
 
 **Implemented enhancements:**
 
