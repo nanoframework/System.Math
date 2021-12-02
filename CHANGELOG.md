@@ -1,5 +1,65 @@
 # Changelog
 
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.18...HEAD)
+
+**Documentation and other chores:**
+
+- Bumps nanoFramework.CoreLibrary from 1.11.6-preview.2 to 1.11.7 [\#89](https://github.com/nanoframework/System.Math/pull/89)
+
+## [v1.4.3-preview.18](https://github.com/nanoframework/System.Math/tree/v1.4.3-preview.18) (2021-12-02)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.15...v1.4.3-preview.18)
+
+**Documentation and other chores:**
+
+- Update 1 nuget dependencies [\#88](https://github.com/nanoframework/System.Math/pull/88)
+- Bumps nanoFramework.CoreLibrary from 1.10.5 to 1.11.6-preview.2 [\#86](https://github.com/nanoframework/System.Math/pull/86)
+
+## [v1.4.3-preview.15](https://github.com/nanoframework/System.Math/tree/v1.4.3-preview.15) (2021-12-01)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.7...v1.4.3-preview.15)
+
+**Documentation and other chores:**
+
+- Update 2 nuget dependencies [\#87](https://github.com/nanoframework/System.Math/pull/87)
+- Add unit test for Max\(\) [\#85](https://github.com/nanoframework/System.Math/pull/85)
+
+## [v1.4.3-preview.7](https://github.com/nanoframework/System.Math/tree/v1.4.3-preview.7) (2021-11-12)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.5...v1.4.3-preview.7)
+
+**Implemented enhancements:**
+
+- Miscellaneous improvements [\#84](https://github.com/nanoframework/System.Math/pull/84)
+
+## [v1.4.3-preview.5](https://github.com/nanoframework/System.Math/tree/v1.4.3-preview.5) (2021-11-12)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.3...v1.4.3-preview.5)
+
+**Documentation and other chores:**
+
+- Adding more unit tests [\#83](https://github.com/nanoframework/System.Math/pull/83)
+
+## [v1.4.3-preview.3](https://github.com/nanoframework/System.Math/tree/v1.4.3-preview.3) (2021-11-12)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.1...v1.4.3-preview.3)
+
+**Implemented enhancements:**
+
+- Remove duplicated code [\#82](https://github.com/nanoframework/System.Math/pull/82)
+
+## [v1.4.3-preview.1](https://github.com/nanoframework/System.Math/tree/v1.4.3-preview.1) (2021-11-11)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.1...v1.4.3-preview.1)
+
+**Documentation and other chores:**
+
+- Remove obsolete methods [\#80](https://github.com/nanoframework/System.Math/pull/80)
+
+## [v1.4.1](https://github.com/nanoframework/System.Math/tree/v1.4.1) (2021-07-15)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.1-preview.12...v1.4.1)
+
 ## [v1.4.1-preview.12](https://github.com/nanoframework/System.Math/tree/v1.4.1-preview.12) (2021-07-14)
 
 [Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.1-preview.10...v1.4.1-preview.12)
