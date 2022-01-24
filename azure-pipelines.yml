@@ -38,6 +38,9 @@ steps:
     runUnitTests: true
     unitTestRunsettings: '$(System.DefaultWorkingDirectory)\Tests\MathUnitTests\nano.runsettings'
 
+# update UnitsNet
+- template: azure-pipelines-templates/update-units-net.yml@templates
+
 # step from template @ nf-tools repo
 # report error
 - template: azure-pipelines-templates/discord-webhook-task.yml@templates  
