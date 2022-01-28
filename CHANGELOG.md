@@ -1,8 +1,8 @@
 # Changelog
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Math/tree/HEAD)
+## [v1.4.4-preview.10](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.10) (2022-01-28)
 
-[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.8...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.8...v1.4.4-preview.10)
 
 **Documentation and other chores:**
 
