@@ -4,8 +4,7 @@
     <id>nanoFramework.System.Math.DELIVERABLES</id>
     <version>$version$</version>
     <title>nanoFramework.System.Math.DELIVERABLES</title>
-    <authors>nanoFramework project contributors</authors>
-    <owners>nanoFramework project contributors,dotnetfoundation</owners>
+    <authors>nanoframework</authors>
     <license type="file">LICENSE.md</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
