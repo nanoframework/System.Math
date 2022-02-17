@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.11...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.13...HEAD)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#99](https://github.com/nanoframework/System.Math/pull/99)
+
+## [v1.4.4-preview.13](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.13) (2022-02-04)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.11...v1.4.4-preview.13)
 
 **Documentation and other chores:**
 
