@@ -2,6 +2,78 @@
 
 ## [v1.4.3](https://github.com/nanoframework/System.Math/tree/v1.4.3) (2021-12-02)
 
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.22...HEAD)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#105](https://github.com/nanoframework/System.Math/pull/105)
+- Update 1 NuGet dependencies [\#104](https://github.com/nanoframework/System.Math/pull/104)
+
+## [v1.4.4-preview.22](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.22) (2022-03-17)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.19...v1.4.4-preview.22)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#103](https://github.com/nanoframework/System.Math/pull/103)
+- Update 1 NuGet dependencies [\#102](https://github.com/nanoframework/System.Math/pull/102)
+
+## [v1.4.4-preview.19](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.19) (2022-03-14)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.15...v1.4.4-preview.19)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#101](https://github.com/nanoframework/System.Math/pull/101)
+- Update 1 NuGet dependencies [\#100](https://github.com/nanoframework/System.Math/pull/100)
+
+## [v1.4.4-preview.15](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.15) (2022-02-17)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.13...v1.4.4-preview.15)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#99](https://github.com/nanoframework/System.Math/pull/99)
+
+## [v1.4.4-preview.13](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.13) (2022-02-04)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.11...v1.4.4-preview.13)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#98](https://github.com/nanoframework/System.Math/pull/98)
+
+## [v1.4.4-preview.11](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.11) (2022-01-28)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.10...v1.4.4-preview.11)
+
+## [v1.4.4-preview.10](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.10) (2022-01-28)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.8...v1.4.4-preview.10)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#97](https://github.com/nanoframework/System.Math/pull/97)
+
+## [v1.4.4-preview.8](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.8) (2022-01-28)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.4-preview.5...v1.4.4-preview.8)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#96](https://github.com/nanoframework/System.Math/pull/96)
+
+## [v1.4.4-preview.5](https://github.com/nanoframework/System.Math/tree/v1.4.4-preview.5) (2022-01-21)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3...v1.4.4-preview.5)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#95](https://github.com/nanoframework/System.Math/pull/95)
+- Update 1 nuget dependencies [\#91](https://github.com/nanoframework/System.Math/pull/91)
+
+## [v1.4.3](https://github.com/nanoframework/System.Math/tree/v1.4.3) (2021-12-02)
+
 [Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.4.3-preview.20...v1.4.3)
 
 **Documentation and other chores:**
