@@ -50,7 +50,7 @@ steps:
   parameters:
     sonarCloudProject: 'nanoframework_lib-nanoFramework.System.Math'
     runUnitTests: true
-    unitTestRunsettings: '$(System.DefaultWorkingDirectory)\Tests\MathUnitTests\nano.runsettings'
+    unitTestRunsettings: '$(System.DefaultWorkingDirectory)\.runsettings'
 
 # update UnitsNet
 - template: azure-pipelines-templates/update-units-net.yml@templates
