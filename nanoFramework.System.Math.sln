@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.System.Math", "nanoFramework.System.Math\nanoFramework.System.Math.nfproj", "{E30AE2AA-BED0-4AA8-AC22-04C274898894}"
 EndProject
@@ -15,6 +15,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F8C7DEF3-419B-4BEB-BF92-B55D1FCC717F}"
 EndProject
 Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "MathUnitTests", "Tests\MathUnitTests\MathUnitTests.nfproj", "{CB4FC8C0-D86E-4264-A405-2DB73B28E598}"
+EndProject
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.System.Math.Benchmark", "nanoFramework.System.Math.Benchmark\nanoFramework.System.Math.Benchmark.nfproj", "{DAC19492-9CE0-42D2-A913-559B54CAE31A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,12 @@ Global
 		{CB4FC8C0-D86E-4264-A405-2DB73B28E598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB4FC8C0-D86E-4264-A405-2DB73B28E598}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CB4FC8C0-D86E-4264-A405-2DB73B28E598}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DAC19492-9CE0-42D2-A913-559B54CAE31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC19492-9CE0-42D2-A913-559B54CAE31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC19492-9CE0-42D2-A913-559B54CAE31A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DAC19492-9CE0-42D2-A913-559B54CAE31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC19492-9CE0-42D2-A913-559B54CAE31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC19492-9CE0-42D2-A913-559B54CAE31A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
