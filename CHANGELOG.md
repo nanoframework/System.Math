@@ -6,6 +6,17 @@
 
 **Documentation and other chores:**
 
+- Update 1 NuGet dependencies [\#120](https://github.com/nanoframework/System.Math/pull/120)
+- Added math benchmarks [\#118](https://github.com/nanoframework/System.Math/pull/118)
+- Update 1 NuGet dependencies [\#117](https://github.com/nanoframework/System.Math/pull/117)
+- Update 1 NuGet dependencies [\#116](https://github.com/nanoframework/System.Math/pull/116)
+- Update 1 NuGet dependencies [\#115](https://github.com/nanoframework/System.Math/pull/115)
+- Update 1 NuGet dependencies [\#114](https://github.com/nanoframework/System.Math/pull/114)
+- Update 1 NuGet dependencies [\#113](https://github.com/nanoframework/System.Math/pull/113)
+- Update 1 NuGet dependencies [\#112](https://github.com/nanoframework/System.Math/pull/112)
+- Update 1 NuGet dependencies [\#111](https://github.com/nanoframework/System.Math/pull/111)
+- Update 1 NuGet dependencies [\#110](https://github.com/nanoframework/System.Math/pull/110)
+- Update 1 NuGet dependencies [\#109](https://github.com/nanoframework/System.Math/pull/109)
 - Update 1 NuGet dependencies [\#108](https://github.com/nanoframework/System.Math/pull/108)
 
 ## [v1.4.4](https://github.com/nanoframework/System.Math/tree/v1.4.4) (2022-03-28)
