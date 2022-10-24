@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.5.8...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.5.10...HEAD)
+
+**Documentation and other chores:**
+
+- Update 3 NuGet dependencies [\#123](https://github.com/nanoframework/System.Math/pull/123)
+
+## [v1.5.10](https://github.com/nanoframework/System.Math/tree/v1.5.10) (2022-10-23)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.5.8...v1.5.10)
 
 **Documentation and other chores:**
 
