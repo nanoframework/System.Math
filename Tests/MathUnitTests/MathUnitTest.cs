@@ -14,45 +14,45 @@ namespace MathUnitTests
         [TestMethod]
         public static void Clamp_SByte()
         {
-            Assert.Equal((sbyte)-1, Math.Clamp((sbyte)-1, (sbyte)-1, (sbyte)1));
-            Assert.Equal((sbyte)0, Math.Clamp((sbyte)0, (sbyte)-1, (sbyte)1));
-            Assert.Equal((sbyte)1, Math.Clamp((sbyte)1, (sbyte)-1, (sbyte)1));
-            Assert.Equal((sbyte)1, Math.Clamp((sbyte)1, (sbyte)-1, (sbyte)1));
-            Assert.Equal((sbyte)-1, Math.Clamp((sbyte)-2, (sbyte)-1, (sbyte)1));
-            Assert.Equal((sbyte)1, Math.Clamp((sbyte)2, (sbyte)-1, (sbyte)1));
+            Assert.AreEqual((sbyte)-1, Math.Clamp((sbyte)-1, (sbyte)-1, (sbyte)1));
+            Assert.AreEqual((sbyte)0, Math.Clamp((sbyte)0, (sbyte)-1, (sbyte)1));
+            Assert.AreEqual((sbyte)1, Math.Clamp((sbyte)1, (sbyte)-1, (sbyte)1));
+            Assert.AreEqual((sbyte)1, Math.Clamp((sbyte)1, (sbyte)-1, (sbyte)1));
+            Assert.AreEqual((sbyte)-1, Math.Clamp((sbyte)-2, (sbyte)-1, (sbyte)1));
+            Assert.AreEqual((sbyte)1, Math.Clamp((sbyte)2, (sbyte)-1, (sbyte)1));
         }
 
         [TestMethod]
         public static void Clamp_Byte()
         {
-            Assert.Equal((byte)1, Math.Clamp((byte)1, (byte)1, (byte)3));
-            Assert.Equal((byte)2, Math.Clamp((byte)2, (byte)1, (byte)3));
-            Assert.Equal((byte)3, Math.Clamp((byte)3, (byte)1, (byte)3));
-            Assert.Equal((byte)1, Math.Clamp((byte)1, (byte)1, (byte)1));
-            Assert.Equal((byte)1, Math.Clamp((byte)0, (byte)1, (byte)3));
-            Assert.Equal((byte)3, Math.Clamp((byte)4, (byte)1, (byte)3));
+            Assert.AreEqual((byte)1, Math.Clamp((byte)1, (byte)1, (byte)3));
+            Assert.AreEqual((byte)2, Math.Clamp((byte)2, (byte)1, (byte)3));
+            Assert.AreEqual((byte)3, Math.Clamp((byte)3, (byte)1, (byte)3));
+            Assert.AreEqual((byte)1, Math.Clamp((byte)1, (byte)1, (byte)1));
+            Assert.AreEqual((byte)1, Math.Clamp((byte)0, (byte)1, (byte)3));
+            Assert.AreEqual((byte)3, Math.Clamp((byte)4, (byte)1, (byte)3));
         }
 
         [TestMethod]
         public static void Clamp_Short()
         {
-            Assert.Equal((short)-1, Math.Clamp((short)-1, (short)-1, (short)1), "Fail 01");
-            Assert.Equal((short)0, Math.Clamp((short)0, (short)-1, (short)1), "Fail 02");
-            Assert.Equal((short)1, Math.Clamp((short)1, (short)-1, (short)1), "Fail 03");
-            Assert.Equal((short)1, Math.Clamp((short)1, (short)-1, (short)1), "Fail 04");
-            Assert.Equal((short)-1, Math.Clamp((short)-2, (short)-1, (short)1), "Fail 05");
-            Assert.Equal((short)1, Math.Clamp((short)2, (short)-1, (short)1), "Fail 06");
+            Assert.AreEqual((short)-1, Math.Clamp((short)-1, (short)-1, (short)1), "Fail 01");
+            Assert.AreEqual((short)0, Math.Clamp((short)0, (short)-1, (short)1), "Fail 02");
+            Assert.AreEqual((short)1, Math.Clamp((short)1, (short)-1, (short)1), "Fail 03");
+            Assert.AreEqual((short)1, Math.Clamp((short)1, (short)-1, (short)1), "Fail 04");
+            Assert.AreEqual((short)-1, Math.Clamp((short)-2, (short)-1, (short)1), "Fail 05");
+            Assert.AreEqual((short)1, Math.Clamp((short)2, (short)-1, (short)1), "Fail 06");
         }
 
         [TestMethod]
         public static void Clamp_UShort()
         {
-            Assert.Equal((ushort)1, Math.Clamp((ushort)1, (ushort)1, (ushort)3));
-            Assert.Equal((ushort)2, Math.Clamp((ushort)2, (ushort)1, (ushort)3));
-            Assert.Equal((ushort)3, Math.Clamp((ushort)3, (ushort)1, (ushort)3));
-            Assert.Equal((ushort)1, Math.Clamp((ushort)1, (ushort)1, (ushort)1));
-            Assert.Equal((ushort)1, Math.Clamp((ushort)0, (ushort)1, (ushort)3));
-            Assert.Equal((ushort)3, Math.Clamp((ushort)4, (ushort)1, (ushort)3));
+            Assert.AreEqual((ushort)1, Math.Clamp((ushort)1, (ushort)1, (ushort)3));
+            Assert.AreEqual((ushort)2, Math.Clamp((ushort)2, (ushort)1, (ushort)3));
+            Assert.AreEqual((ushort)3, Math.Clamp((ushort)3, (ushort)1, (ushort)3));
+            Assert.AreEqual((ushort)1, Math.Clamp((ushort)1, (ushort)1, (ushort)1));
+            Assert.AreEqual((ushort)1, Math.Clamp((ushort)0, (ushort)1, (ushort)3));
+            Assert.AreEqual((ushort)3, Math.Clamp((ushort)4, (ushort)1, (ushort)3));
         }
 
         [TestMethod]
@@ -60,12 +60,12 @@ namespace MathUnitTests
         {
             // keeping cast on purpose to be able to test the method
 #pragma warning disable S1905 
-            Assert.Equal((int)-1, Math.Clamp((int)-1, (int)-1, (int)1));
-            Assert.Equal((int)0, Math.Clamp((int)0, (int)-1, (int)1));
-            Assert.Equal((int)1, Math.Clamp((int)1, (int)-1, (int)1));
-            Assert.Equal((int)1, Math.Clamp((int)1, (int)-1, (int)1));
-            Assert.Equal((int)-1, Math.Clamp((int)-2, (int)-1, (int)1));
-            Assert.Equal((int)1, Math.Clamp((int)2, (int)-1, (int)1));
+            Assert.AreEqual((int)-1, Math.Clamp((int)-1, (int)-1, (int)1));
+            Assert.AreEqual((int)0, Math.Clamp((int)0, (int)-1, (int)1));
+            Assert.AreEqual((int)1, Math.Clamp((int)1, (int)-1, (int)1));
+            Assert.AreEqual((int)1, Math.Clamp((int)1, (int)-1, (int)1));
+            Assert.AreEqual((int)-1, Math.Clamp((int)-2, (int)-1, (int)1));
+            Assert.AreEqual((int)1, Math.Clamp((int)2, (int)-1, (int)1));
 #pragma warning restore S1905 
         }
 
@@ -74,12 +74,12 @@ namespace MathUnitTests
         {
             // keeping cast on purpose to be able to test the method
 #pragma warning disable IDE0004 
-            Assert.Equal((uint)1, Math.Clamp((uint)1, (uint)1, (uint)3));
-            Assert.Equal((uint)2, Math.Clamp((uint)2, (uint)1, (uint)3));
-            Assert.Equal((uint)3, Math.Clamp((uint)3, (uint)1, (uint)3));
-            Assert.Equal((uint)1, Math.Clamp((uint)1, (uint)1, (uint)1));
-            Assert.Equal((uint)1, Math.Clamp((uint)0, (uint)1, (uint)3));
-            Assert.Equal((uint)3, Math.Clamp((uint)4, (uint)1, (uint)3));
+            Assert.AreEqual((uint)1, Math.Clamp((uint)1, (uint)1, (uint)3));
+            Assert.AreEqual((uint)2, Math.Clamp((uint)2, (uint)1, (uint)3));
+            Assert.AreEqual((uint)3, Math.Clamp((uint)3, (uint)1, (uint)3));
+            Assert.AreEqual((uint)1, Math.Clamp((uint)1, (uint)1, (uint)1));
+            Assert.AreEqual((uint)1, Math.Clamp((uint)0, (uint)1, (uint)3));
+            Assert.AreEqual((uint)3, Math.Clamp((uint)4, (uint)1, (uint)3));
 #pragma warning restore IDE0004
         }
 
@@ -88,12 +88,12 @@ namespace MathUnitTests
         {
             // keeping cast on purpose to be able to test the method
 #pragma warning disable IDE0004 
-            Assert.Equal((long)-1, Math.Clamp((long)-1, (long)-1, (long)1));
-            Assert.Equal((long)0, Math.Clamp((long)0, (long)-1, (long)1));
-            Assert.Equal((long)1, Math.Clamp((long)1, (long)-1, (long)1));
-            Assert.Equal((long)1, Math.Clamp((long)1, (long)-1, (long)1));
-            Assert.Equal((long)-1, Math.Clamp((long)-2, (long)-1, (long)1));
-            Assert.Equal((long)1, Math.Clamp((long)2, (long)-1, (long)1));
+            Assert.AreEqual((long)-1, Math.Clamp((long)-1, (long)-1, (long)1));
+            Assert.AreEqual((long)0, Math.Clamp((long)0, (long)-1, (long)1));
+            Assert.AreEqual((long)1, Math.Clamp((long)1, (long)-1, (long)1));
+            Assert.AreEqual((long)1, Math.Clamp((long)1, (long)-1, (long)1));
+            Assert.AreEqual((long)-1, Math.Clamp((long)-2, (long)-1, (long)1));
+            Assert.AreEqual((long)1, Math.Clamp((long)2, (long)-1, (long)1));
 #pragma warning restore IDE0004 
         }
 
@@ -102,47 +102,47 @@ namespace MathUnitTests
         {
             // keeping cast on purpose to be able to test the method
 #pragma warning disable IDE0004 
-            Assert.Equal((ulong)1, Math.Clamp((ulong)1, (ulong)1, (ulong)3), "Fail 01");
-            Assert.Equal((ulong)2, Math.Clamp((ulong)2, (ulong)1, (ulong)3), "Fail 02");
-            Assert.Equal((ulong)3, Math.Clamp((ulong)3, (ulong)1, (ulong)3), "Fail 03");
-            Assert.Equal((ulong)1, Math.Clamp((ulong)1, (ulong)1, (ulong)1), "Fail 04");
-            Assert.Equal((ulong)1, Math.Clamp((ulong)0, (ulong)1, (ulong)3), "Fail 05");
-            Assert.Equal((ulong)3, Math.Clamp((ulong)4, (ulong)1, (ulong)3), "Fail 06");
+            Assert.AreEqual((ulong)1, Math.Clamp((ulong)1, (ulong)1, (ulong)3), "Fail 01");
+            Assert.AreEqual((ulong)2, Math.Clamp((ulong)2, (ulong)1, (ulong)3), "Fail 02");
+            Assert.AreEqual((ulong)3, Math.Clamp((ulong)3, (ulong)1, (ulong)3), "Fail 03");
+            Assert.AreEqual((ulong)1, Math.Clamp((ulong)1, (ulong)1, (ulong)1), "Fail 04");
+            Assert.AreEqual((ulong)1, Math.Clamp((ulong)0, (ulong)1, (ulong)3), "Fail 05");
+            Assert.AreEqual((ulong)3, Math.Clamp((ulong)4, (ulong)1, (ulong)3), "Fail 06");
 #pragma warning restore IDE0004 
         }
 
         [TestMethod]
         public static void Clamp_Double()
         {
-            Assert.Equal(double.NegativeInfinity, Math.Clamp(double.NegativeInfinity, double.NegativeInfinity, double.PositiveInfinity), "Fail 01");
-            Assert.Equal(1, Math.Clamp(1, double.NegativeInfinity, double.PositiveInfinity), "Fail 02");
-            Assert.Equal(double.PositiveInfinity, Math.Clamp(double.PositiveInfinity, double.NegativeInfinity, double.PositiveInfinity), "Fail 03");
-            Assert.Equal(double.PositiveInfinity, Math.Clamp(1, double.PositiveInfinity, double.PositiveInfinity), "Fail 04");
-            Assert.Equal(double.NegativeInfinity, Math.Clamp(1, double.NegativeInfinity, double.NegativeInfinity), "Fail 05");
-            Assert.True(double.IsNaN(Math.Clamp(double.NaN, double.NaN, double.NaN)), "Fail 06");
-            Assert.True(double.IsNaN(Math.Clamp(double.NaN, double.NaN, 1)), "Fail 07");
-            Assert.True(double.IsNaN(Math.Clamp(double.NaN, 1, double.NaN)), "Fail 08");
-            Assert.True(double.IsNaN(Math.Clamp(double.NaN, 1, 1)), "Fail 09");
-            Assert.Equal(1, Math.Clamp(1, double.NaN, double.NaN), "Fail 10");
-            Assert.Equal(1, Math.Clamp(1, double.NaN, 1), "Fail 11");
-            Assert.Equal(1, Math.Clamp(1, 1, double.NaN), "Fail 12");
+            Assert.AreEqual(double.NegativeInfinity, Math.Clamp(double.NegativeInfinity, double.NegativeInfinity, double.PositiveInfinity), "Fail 01");
+            Assert.AreEqual(1, Math.Clamp(1, double.NegativeInfinity, double.PositiveInfinity), "Fail 02");
+            Assert.AreEqual(double.PositiveInfinity, Math.Clamp(double.PositiveInfinity, double.NegativeInfinity, double.PositiveInfinity), "Fail 03");
+            Assert.AreEqual(double.PositiveInfinity, Math.Clamp(1, double.PositiveInfinity, double.PositiveInfinity), "Fail 04");
+            Assert.AreEqual(double.NegativeInfinity, Math.Clamp(1, double.NegativeInfinity, double.NegativeInfinity), "Fail 05");
+            Assert.IsTrue(double.IsNaN(Math.Clamp(double.NaN, double.NaN, double.NaN)), "Fail 06");
+            Assert.IsTrue(double.IsNaN(Math.Clamp(double.NaN, double.NaN, 1)), "Fail 07");
+            Assert.IsTrue(double.IsNaN(Math.Clamp(double.NaN, 1, double.NaN)), "Fail 08");
+            Assert.IsTrue(double.IsNaN(Math.Clamp(double.NaN, 1, 1)), "Fail 09");
+            Assert.AreEqual(1, Math.Clamp(1, double.NaN, double.NaN), "Fail 10");
+            Assert.AreEqual(1, Math.Clamp(1, double.NaN, 1), "Fail 11");
+            Assert.AreEqual(1, Math.Clamp(1, 1, double.NaN), "Fail 12");
         }
 
         [TestMethod]
         public static void Clamp_Float()
         {
-            Assert.Equal(float.NegativeInfinity, Math.Clamp(float.NegativeInfinity, float.NegativeInfinity, float.PositiveInfinity), "Fail 01");
-            Assert.Equal(1, Math.Clamp(1, float.NegativeInfinity, float.PositiveInfinity), "Fail 02");
-            Assert.Equal(float.PositiveInfinity, Math.Clamp(float.PositiveInfinity, float.NegativeInfinity, float.PositiveInfinity), "Fail 03");
-            Assert.Equal(float.PositiveInfinity, Math.Clamp(1, float.PositiveInfinity, float.PositiveInfinity), "Fail 04");
-            Assert.Equal(float.NegativeInfinity, Math.Clamp(1, float.NegativeInfinity, float.NegativeInfinity), "Fail 05");
-            Assert.True(float.IsNaN(Math.Clamp(float.NaN, float.NaN, float.NaN)), "Fail 06");
-            Assert.True(float.IsNaN(Math.Clamp(float.NaN, float.NaN, 1)), "Fail 07");
-            Assert.True(float.IsNaN(Math.Clamp(float.NaN, 1, float.NaN)), "Fail 08");
-            Assert.True(float.IsNaN(Math.Clamp(float.NaN, 1, 1)), "Fail 09");
-            Assert.Equal(1, Math.Clamp(1, float.NaN, float.NaN), "Fail 10");
-            Assert.Equal(1, Math.Clamp(1, float.NaN, 1), "Fail 11");
-            Assert.Equal(1, Math.Clamp(1, 1, float.NaN), "Fail 12");
+            Assert.AreEqual(float.NegativeInfinity, Math.Clamp(float.NegativeInfinity, float.NegativeInfinity, float.PositiveInfinity), "Fail 01");
+            Assert.AreEqual(1, Math.Clamp(1, float.NegativeInfinity, float.PositiveInfinity), "Fail 02");
+            Assert.AreEqual(float.PositiveInfinity, Math.Clamp(float.PositiveInfinity, float.NegativeInfinity, float.PositiveInfinity), "Fail 03");
+            Assert.AreEqual(float.PositiveInfinity, Math.Clamp(1, float.PositiveInfinity, float.PositiveInfinity), "Fail 04");
+            Assert.AreEqual(float.NegativeInfinity, Math.Clamp(1, float.NegativeInfinity, float.NegativeInfinity), "Fail 05");
+            Assert.IsTrue(float.IsNaN(Math.Clamp(float.NaN, float.NaN, float.NaN)), "Fail 06");
+            Assert.IsTrue(float.IsNaN(Math.Clamp(float.NaN, float.NaN, 1)), "Fail 07");
+            Assert.IsTrue(float.IsNaN(Math.Clamp(float.NaN, 1, float.NaN)), "Fail 08");
+            Assert.IsTrue(float.IsNaN(Math.Clamp(float.NaN, 1, 1)), "Fail 09");
+            Assert.AreEqual(1, Math.Clamp(1, float.NaN, float.NaN), "Fail 10");
+            Assert.AreEqual(1, Math.Clamp(1, float.NaN, 1), "Fail 11");
+            Assert.AreEqual(1, Math.Clamp(1, 1, float.NaN), "Fail 12");
         }
 
         [TestMethod]
@@ -179,17 +179,17 @@ namespace MathUnitTests
 
                 if (double.IsNaN(d[i]))
                 {
-                    Assert.True(double.IsNaN(res), $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
+                    Assert.IsTrue(double.IsNaN(res), $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
 
                 }
                 else if (double.IsPositiveInfinity(d[i]))
                 {
-                    Assert.True(double.IsPositiveInfinity(res), $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
+                    Assert.IsTrue(double.IsPositiveInfinity(res), $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
 
                 }
                 else
                 {
-                    Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
+                    Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Cbrt(...{d[i]}) -- FAILED AT: {res}");
                 }
             }
         }
@@ -202,21 +202,21 @@ namespace MathUnitTests
             double neg_inf = (-3.0 / 0.0);
 
 
-            Assert.True(double.IsNaN(nan), "NaN was not correctly identified");
-            Assert.False(double.IsPositiveInfinity(nan), "NaN was incorrectly identified as Positive Infinity");
-            Assert.False(double.IsNegativeInfinity(nan), "NaN was incorrectly identified as Negative Infinity");
+            Assert.IsTrue(double.IsNaN(nan), "NaN was not correctly identified");
+            Assert.IsFalse(double.IsPositiveInfinity(nan), "NaN was incorrectly identified as Positive Infinity");
+            Assert.IsFalse(double.IsNegativeInfinity(nan), "NaN was incorrectly identified as Negative Infinity");
 
             //--//
 
-            Assert.True(double.IsPositiveInfinity(pos_inf), "Positive Infinity was not correctly identified");
-            Assert.False(double.IsNaN(pos_inf), "Positive Infinity  was incorrectly identified asdouble.NaN");
-            Assert.False(double.IsNegativeInfinity(pos_inf), "Positive Infinity  was incorrectly identified as Negative Infinity");
+            Assert.IsTrue(double.IsPositiveInfinity(pos_inf), "Positive Infinity was not correctly identified");
+            Assert.IsFalse(double.IsNaN(pos_inf), "Positive Infinity  was incorrectly identified asdouble.NaN");
+            Assert.IsFalse(double.IsNegativeInfinity(pos_inf), "Positive Infinity  was incorrectly identified as Negative Infinity");
 
             //--//
 
-            Assert.True(double.IsNegativeInfinity(neg_inf), "NegativeInfinity was not correctly identified");
-            Assert.False(double.IsPositiveInfinity(neg_inf), "NegativeInfinity Infinity was incorrectly identified as Positive Infinity");
-            Assert.False(double.IsNaN(neg_inf), "NegativeInfinity Infinity was incorrectly identified asdouble.NaN");
+            Assert.IsTrue(double.IsNegativeInfinity(neg_inf), "NegativeInfinity was not correctly identified");
+            Assert.IsFalse(double.IsPositiveInfinity(neg_inf), "NegativeInfinity Infinity was incorrectly identified as Positive Infinity");
+            Assert.IsFalse(double.IsNaN(neg_inf), "NegativeInfinity Infinity was incorrectly identified asdouble.NaN");
         }
 
         [TestMethod]
@@ -247,14 +247,14 @@ namespace MathUnitTests
             {
                 res = Math.Acos(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Acos(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Acos(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Acos(-2);
-            Assert.Equal(res.ToString("F0"), "NaN", "Acos(...-2) -- PASS");
+            Assert.AreEqual(res.ToString("F0"), "NaN", "Acos(...-2) -- PASS");
 
             res = Math.Acos(2);
-            Assert.Equal(res.ToString("F0"), "NaN", "Acos(...2) -- PASS");
+            Assert.AreEqual(res.ToString("F0"), "NaN", "Acos(...2) -- PASS");
         }
 
         [TestMethod]
@@ -268,14 +268,14 @@ namespace MathUnitTests
             {
                 res = Math.Asin(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Asin(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Asin(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Asin(-2);
-            Assert.Equal(res.ToString("F0"), "NaN", "Asin(...-2) -- PASS");
+            Assert.AreEqual(res.ToString("F0"), "NaN", "Asin(...-2) -- PASS");
 
             res = Math.Asin(2);
-            Assert.Equal(res.ToString("F0"), "NaN", "Asin(...2) -- PASS");
+            Assert.AreEqual(res.ToString("F0"), "NaN", "Asin(...2) -- PASS");
         }
 
         [TestMethod]
@@ -289,12 +289,12 @@ namespace MathUnitTests
             {
                 res = Math.Atan(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, "Atan(..." + d[i] + ") -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, "Atan(..." + d[i] + ") -- FAILED AT: {res}");
             }
 
             res = Math.Atan(double.NaN);
 
-            Assert.Equal(res.ToString("F0"), "NaN", "Atan(...NaN) -- PASS");
+            Assert.AreEqual(res.ToString("F0"), "NaN", "Atan(...NaN) -- PASS");
         }
 
         [TestMethod]
@@ -334,7 +334,7 @@ namespace MathUnitTests
             {
                 res = Math.Atan2(_x[i], _y[i]); ;
 
-                Assert.False((answers[i] - res) > 0.0001d || (answers[i] - res) < -0.0001d, $"Atan2(...{_x[i]}, {_y[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answers[i] - res) > 0.0001d || (answers[i] - res) < -0.0001d, $"Atan2(...{_x[i]}, {_y[i]}) -- FAILED AT: {res}");
             }
 
             double y = 0;
@@ -342,28 +342,28 @@ namespace MathUnitTests
             double answer = 0;
             res = Math.Atan2(y, x);
 
-            Assert.Equal(res, answer, $"Atan2(...0, not -ve) -- FAILED AT: {res}");
+            Assert.AreEqual(res, answer, $"Atan2(...0, not -ve) -- FAILED AT: {res}");
 
             y = 0;
             x = -1;
             answer = 3.141592654;
             res = Math.Atan2(y, x);
 
-            Assert.False((answer - res) > 0.0001d || (answer - res) < -0.0001d, $"Atan2(...0, -ve) -- FAILED AT: {res}");
+            Assert.IsFalse((answer - res) > 0.0001d || (answer - res) < -0.0001d, $"Atan2(...0, -ve) -- FAILED AT: {res}");
 
             y = 2;
             x = 0;
             answer = 1.570796327; // ��/2 
             res = Math.Atan2(y, x);
 
-            Assert.False((answer - res) > 0.0001d || (answer - res) < -0.0001d, $"Atan2(...+ve, 0) -- FAILED AT: {res}");
+            Assert.IsFalse((answer - res) > 0.0001d || (answer - res) < -0.0001d, $"Atan2(...+ve, 0) -- FAILED AT: {res}");
 
             y = -2;
             x = 0;
             answer = -1.570796327; //-��/2 
             res = Math.Atan2(y, x);
 
-            Assert.False((answer - res) > 0.0001d || (answer - res) < -0.0001d, $"Atan2(...0, -ve) -- FAILED AT: {res}");
+            Assert.IsFalse((answer - res) > 0.0001d || (answer - res) < -0.0001d, $"Atan2(...0, -ve) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -389,17 +389,17 @@ namespace MathUnitTests
             {
                 res = Math.Ceiling(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Ceiling(... {d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Ceiling(... {d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Ceiling(double.NaN);
-            Assert.Equal(res.ToString(), "NaN", $"Ceiling(... nan) -- FAILED AT: {res}");
+            Assert.AreEqual(res.ToString(), "NaN", $"Ceiling(... nan) -- FAILED AT: {res}");
 
             res = Math.Ceiling(double.NegativeInfinity);
-            Assert.Equal(res.ToString(), "-Infinity", $"Ceiling(... NegativeInfinity) -- FAILED AT: {res}");
+            Assert.AreEqual(res.ToString(), "-Infinity", $"Ceiling(... NegativeInfinity) -- FAILED AT: {res}");
 
             res = Math.Ceiling(double.PositiveInfinity);
-            Assert.Equal(res.ToString(), "Infinity", $"Ceiling(... PositiveInfinity) -- FAILED AT: {res}");
+            Assert.AreEqual(res.ToString(), "Infinity", $"Ceiling(... PositiveInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -422,11 +422,11 @@ namespace MathUnitTests
             {
                 res = Math.Cos(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Cos(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Cos(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Cos(double.NaN);
-            Assert.Equal(res.ToString(), "NaN", "Cos(...double.NaN) -- PASS");
+            Assert.AreEqual(res.ToString(), "NaN", "Cos(...double.NaN) -- PASS");
         }
 
         [TestMethod]
@@ -452,17 +452,17 @@ namespace MathUnitTests
             {
                 res = Math.Cosh(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Cosh(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Cosh(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Cosh(double.NaN);
-            Assert.Equal(res.ToString(), "NaN", "Cosh(...double.NaN) -- PASS");
+            Assert.AreEqual(res.ToString(), "NaN", "Cosh(...double.NaN) -- PASS");
 
             res = Math.Cosh(double.NegativeInfinity);
-            Assert.Equal(res.ToString(), "Infinity", "Cosh(... NegativeInfinity) -- PASS");
+            Assert.AreEqual(res.ToString(), "Infinity", "Cosh(... NegativeInfinity) -- PASS");
 
             res = Math.Cosh(double.PositiveInfinity);
-            Assert.Equal(res.ToString(), "Infinity", "Cosh(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.AreEqual(res.ToString(), "Infinity", "Cosh(...PositiveInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -496,20 +496,20 @@ namespace MathUnitTests
             {
                 res = Math.IEEERemainder(x[i], y[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"IEEERemainder(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"IEEERemainder(...{x[i]}/ {y[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.IEEERemainder(3, 2); // x/y = 1.5, case of when x/y falls halfway between two integers
-            Assert.False((res - 2) > 0.0001d, $"IEEERemainder(...3,2) -- FAILED AT: {res}");
+            Assert.IsFalse((res - 2) > 0.0001d, $"IEEERemainder(...3,2) -- FAILED AT: {res}");
 
             res = Math.IEEERemainder(4, 2); // x/y = 2, case when x - (y Q) is zero, the value +0 is returned if x is positive
-            Assert.Equal(res, 0, $"IEEERemainder(...4,2) -- FAILED AT: {res}");
+            Assert.AreEqual(res, 0, $"IEEERemainder(...4,2) -- FAILED AT: {res}");
 
             res = Math.IEEERemainder(-4, 2); // x/y = -2, case when x - (y Q) is zero, the value -0 is returned if x is negative
-            Assert.Equal(res, 0, $"IEEERemainder(...-4,2) -- FAILED AT: {res}");
+            Assert.AreEqual(res, double.Parse("-0"), $"IEEERemainder(...-4,2) -- FAILED AT: {res}");
 
             res = Math.IEEERemainder(3, 0); // case when If y = 0, System.Double.NaN (Not-A-Number) is returned.
-            Assert.True(double.IsNaN(res), $"IEEERemainder(...3,0) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"IEEERemainder(...3,0) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -535,17 +535,17 @@ namespace MathUnitTests
             {
                 res = Math.Exp(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Exp(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Exp(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Exp(double.NaN);
-            Assert.True(double.IsNaN(res), $"Exp(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Exp(...NaN) -- FAILED AT: {res}");
 
             res = Math.Exp(double.PositiveInfinity);
-            Assert.True(double.IsPositiveInfinity(res), $"Exp(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsPositiveInfinity(res), $"Exp(...PositiveInfinity) -- FAILED AT: {res}");
 
             res = Math.Exp(double.NegativeInfinity);
-            Assert.Equal(res, 0, $"Exp(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.AreEqual(res, 0, $"Exp(...NegativeInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -572,17 +572,17 @@ namespace MathUnitTests
             {
                 res = Math.Floor(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Floor(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Floor(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Floor(double.NaN);
-            Assert.True(double.IsNaN(res), $"Floor(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Floor(...NaN) -- FAILED AT: {res}");
 
             res = Math.Floor(double.PositiveInfinity);
-            Assert.True(double.IsPositiveInfinity(res), $"Floor(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsPositiveInfinity(res), $"Floor(...PositiveInfinity) -- FAILED AT: {res}");
 
             res = Math.Floor(double.NegativeInfinity);
-            Assert.True(double.IsNegativeInfinity(res), $"Floor(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNegativeInfinity(res), $"Floor(...NegativeInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -609,20 +609,20 @@ namespace MathUnitTests
             {
                 res = Math.Log(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Log(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Log(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Log(0);
-            Assert.True(double.IsNegativeInfinity(res), $"Log(...0) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNegativeInfinity(res), $"Log(...0) -- FAILED AT: {res}");
 
             res = Math.Log(double.NaN);
-            Assert.True(double.IsNaN(res), $"Log(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Log(...NaN) -- FAILED AT: {res}");
 
             res = Math.Log(double.PositiveInfinity);
-            Assert.True(double.IsPositiveInfinity(res), $"Log(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsPositiveInfinity(res), $"Log(...PositiveInfinity) -- FAILED AT: {res}");
 
             res = Math.Log(double.NegativeInfinity);
-            Assert.True(double.IsNaN(res), $"Log(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Log(...NegativeInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -649,20 +649,20 @@ namespace MathUnitTests
             {
                 res = Math.Log10(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Log10(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Log10(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Log10(0);
-            Assert.True(double.IsNegativeInfinity(res), "Log10(...0) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNegativeInfinity(res), "Log10(...0) -- FAILED AT: {res}");
 
             res = Math.Log10(double.NaN);
-            Assert.True(double.IsNaN(res), $"Log10(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Log10(...NaN) -- FAILED AT: {res}");
 
             res = Math.Log10(double.PositiveInfinity);
-            Assert.True(double.IsPositiveInfinity(res), $"Log10(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsPositiveInfinity(res), $"Log10(...PositiveInfinity) -- FAILED AT: {res}");
 
             res = Math.Log10(double.NegativeInfinity);
-            Assert.True(double.IsNaN(res), $"Log10(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Log10(...NegativeInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -692,17 +692,17 @@ namespace MathUnitTests
             {
                 res = Math.Max(x[i], y[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Max(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Max(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Max(10, double.NaN);
-            Assert.True(double.IsNaN(res), $"Max(...10,double.NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Max(...10,double.NaN) -- FAILED AT: {res}");
 
             res = Math.Max(double.NaN, 10);
-            Assert.True(double.IsNaN(res), $"Max(...NaN, 10) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Max(...NaN, 10) -- FAILED AT: {res}");
 
             res = Math.Max(double.NaN, double.NaN);
-            Assert.True(double.IsNaN(res), $"Max(...NaN,double.NaN) -- FAILED AT:  {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Max(...NaN,double.NaN) -- FAILED AT:  {res}");
         }
 
         [TestMethod]
@@ -732,17 +732,17 @@ namespace MathUnitTests
             {
                 res = Math.Min(x[i], y[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Min(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Min(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Min(10, double.NaN);
-            Assert.True(double.IsNaN(res), $"Min(...10,double.NaN) -- FAILED AT:  {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Min(...10,double.NaN) -- FAILED AT:  {res}");
 
             res = Math.Min(double.NaN, 10);
-            Assert.Equal(res, 10, $"Min(...NaN, 10) -- FAILED AT:  {res}");
+            Assert.AreEqual(res, 10, $"Min(...NaN, 10) -- FAILED AT:  {res}");
 
             res = Math.Min(double.NaN, double.NaN);
-            Assert.True(double.IsNaN(res), $"Min(...NaN,double.NaN) -- FAILED AT:  {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Min(...NaN,double.NaN) -- FAILED AT:  {res}");
         }
 
         [TestMethod]
@@ -771,7 +771,7 @@ namespace MathUnitTests
             {
                 res = Math.Pow(x[i], y[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Pow(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Pow(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
             }
 
             x = new double[] { -0.50000000000000000000, -1.00000000000000000000, -1.50000000000000000000, -2.00000000000000000000 };
@@ -781,17 +781,17 @@ namespace MathUnitTests
             {
                 res = Math.Pow(x[i], y[i]);
 
-                Assert.Equal(res.ToString(), "NaN", "Pow(..." + x[i] + ", " + y[i] + ") -- FAILED AT: {res}");
+                Assert.AreEqual(res.ToString(), "NaN", "Pow(..." + x[i] + ", " + y[i] + ") -- FAILED AT: {res}");
             }
 
             res = Math.Pow(10, double.NaN);
-            Assert.True(double.IsNaN(res), $"Pow(...10,double.NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Pow(...10,double.NaN) -- FAILED AT: {res}");
 
             res = Math.Pow(double.NaN, 10);
-            Assert.True(double.IsNaN(res), $"Pow(...NaN, 10) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Pow(...NaN, 10) -- FAILED AT: {res}");
 
             res = Math.Pow(double.NaN, double.NaN);
-            Assert.True(double.IsNaN(res), $"Pow(...NaN,double.NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Pow(...NaN,double.NaN) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -817,11 +817,11 @@ namespace MathUnitTests
             {
                 res = Math.Round(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Round(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Round(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Round(double.NaN);
-            Assert.True(double.IsNaN(res), $"Round(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Round(...NaN) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -855,11 +855,11 @@ namespace MathUnitTests
                 res = Math.Sign(d[i]);// the output is wrong, needs to be corrected 
                 res1[i] = res;
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Sign(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Sign(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Sign(double.NaN);
-            Assert.Equal(res, 0, $"Sign(...NaN) -- FAILED AT: {res}");
+            Assert.AreEqual(res, 0, $"Sign(...NaN) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -883,17 +883,17 @@ namespace MathUnitTests
             {
                 res = Math.Sin(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, "Sin(..." + d[i] + ") -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, "Sin(..." + d[i] + ") -- FAILED AT: {res}");
             }
 
             res = Math.Sin(double.NaN);
-            Assert.True(double.IsNaN(res), $"Sin(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Sin(...NaN) -- FAILED AT: {res}");
 
             res = Math.Sin(double.PositiveInfinity);
-            Assert.True(double.IsNaN(res), $"Sin(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Sin(...PositiveInfinity) -- FAILED AT: {res}");
 
             res = Math.Sin(double.NegativeInfinity);
-            Assert.True(double.IsNaN(res), $"Sin(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Sin(...NegativeInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -919,17 +919,17 @@ namespace MathUnitTests
             {
                 res = Math.Sinh(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Sinh(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Sinh(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Sinh(double.NaN);
-            Assert.True(double.IsNaN(res), $"Sinh(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Sinh(...NaN) -- FAILED AT: {res}");
 
             res = Math.Sinh(double.NegativeInfinity);
-            Assert.True(double.IsNegativeInfinity(res), $"Sinh(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNegativeInfinity(res), $"Sinh(...NegativeInfinity) -- FAILED AT: {res}");
 
             res = Math.Sinh(double.PositiveInfinity);
-            Assert.True(double.IsPositiveInfinity(res), $"Sinh(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsPositiveInfinity(res), $"Sinh(...PositiveInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -955,20 +955,20 @@ namespace MathUnitTests
             {
                 res = Math.Sqrt(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Sqrt(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Sqrt(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Sqrt(-2);
-            Assert.True(double.IsNaN(res), $"Sqrt(...-ve) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Sqrt(...-ve) -- FAILED AT: {res}");
 
             res = Math.Sqrt(double.NaN);
-            Assert.True(double.IsNaN(res), $"Sqrt(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Sqrt(...NaN) -- FAILED AT: {res}");
 
             res = Math.Sqrt(double.NegativeInfinity);
-            Assert.True(double.IsNaN(res), $"Sqrt(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Sqrt(...NegativeInfinity) -- FAILED AT: {res}");
 
             res = Math.Sqrt(double.PositiveInfinity);
-            Assert.True(double.IsPositiveInfinity(res), $"Sqrt(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsPositiveInfinity(res), $"Sqrt(...PositiveInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -993,21 +993,21 @@ namespace MathUnitTests
             {
                 res = Math.Tan(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Tan(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Tan(...{d[i]}) -- FAILED AT: {res}");
             }
 
             // pi/2 
             res = Math.Tan(1.57079632679490000000);
-            Assert.False(double.IsNaN(res), $"Tan(...PI/2) -- FAILED AT: {res}");
+            Assert.IsFalse(double.IsNaN(res), $"Tan(...PI/2) -- FAILED AT: {res}");
 
             res = Math.Tan(double.NaN);
-            Assert.True(double.IsNaN(res), $"Tan(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Tan(...NaN) -- FAILED AT: {res}");
 
             res = Math.Tan(double.PositiveInfinity);
-            Assert.True(double.IsNaN(res), $"Tan(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Tan(...PositiveInfinity) -- FAILED AT: {res}");
 
             res = Math.Tan(double.NegativeInfinity);
-            Assert.True(double.IsNaN(res), $"Tan(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Tan(...NegativeInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -1034,17 +1034,17 @@ namespace MathUnitTests
             {
                 res = Math.Tanh(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Tanh(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Tanh(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Tanh(double.NaN);
-            Assert.True(double.IsNaN(res), $"Tanh(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Tanh(...NaN) -- FAILED AT: {res}");
 
             res = Math.Tanh(double.NegativeInfinity);
-            Assert.Equal(res, -1, $"Tanh(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.AreEqual(res, -1, $"Tanh(...NegativeInfinity) -- FAILED AT: {res}");
 
             res = Math.Tanh(double.PositiveInfinity);
-            Assert.Equal(res, 1, $"Tanh(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.AreEqual(res, 1, $"Tanh(...PositiveInfinity) -- FAILED AT: {res}");
         }
 
         [TestMethod]
@@ -1070,17 +1070,17 @@ namespace MathUnitTests
             {
                 res = Math.Truncate(d[i]);
 
-                Assert.False((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Truncate(...{d[i]}) -- FAILED AT: {res}");
+                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Truncate(...{d[i]}) -- FAILED AT: {res}");
             }
 
             res = Math.Truncate(double.NaN);
-            Assert.True(double.IsNaN(res), $"Truncate(...NaN) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNaN(res), $"Truncate(...NaN) -- FAILED AT: {res}");
 
             res = Math.Truncate(double.NegativeInfinity);
-            Assert.True(double.IsNegativeInfinity(res), $"Truncate(...NegativeInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsNegativeInfinity(res), $"Truncate(...NegativeInfinity) -- FAILED AT: {res}");
 
             res = Math.Truncate(double.PositiveInfinity);
-            Assert.True(double.IsPositiveInfinity(res), $"Truncate(...PositiveInfinity) -- FAILED AT: {res}");
+            Assert.IsTrue(double.IsPositiveInfinity(res), $"Truncate(...PositiveInfinity) -- FAILED AT: {res}");
         }
     }
 }
