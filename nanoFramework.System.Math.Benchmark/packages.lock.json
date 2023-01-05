@@ -4,9 +4,9 @@
     ".NETnanoFramework,Version=v1.0": {
       "nanoFramework.Benchmark": {
         "type": "Direct",
-        "requested": "[1.0.39, 1.0.39]",
-        "resolved": "1.0.39",
-        "contentHash": "YesvgOgP2UHy/yzGxEnCFN29VwkdedhMZ8M8cZbZsPVK7ziKuRWzc4mVuKx9ju+Q6IV4XHWPLMzTrRdNQSxHPg=="
+        "requested": "[1.0.47, 1.0.47]",
+        "resolved": "1.0.47",
+        "contentHash": "ZtLkryY6buGYrFgQ2wPtWBeq7nU8rFLo1b6tAKh4zVyQPUKVCbhpTRrxv/9VUk7ZuU7b/djmLMAaTitZuoC/bw=="
       },
       "nanoFramework.CoreLibrary": {
         "type": "Direct",
@@ -16,9 +16,9 @@
       },
       "nanoFramework.Logging": {
         "type": "Direct",
-        "requested": "[1.1.47, 1.1.47]",
-        "resolved": "1.1.47",
-        "contentHash": "klK4ak7u5uytdXWGsQyDpCvpQnmPrJqq6QDKqTZsJzQyOlBkXQ1Hhy2I9ttyT1vh0JaaPGbdZe/UEK4Y9GqRrA=="
+        "requested": "[1.1.63, 1.1.63]",
+        "resolved": "1.1.63",
+        "contentHash": "gutjQRIKKJc91qKzkGtpA8uvTpNUK1r2OuEy7C8W+dEICkFgR+z1itcG7gKv9I12oiHyurc/3mMgDyz8CsPD3A=="
       },
       "nanoFramework.Runtime.Native": {
         "type": "Direct",
@@ -34,15 +34,15 @@
       },
       "nanoFramework.System.Diagnostics.Stopwatch": {
         "type": "Direct",
-        "requested": "[1.2.188, 1.2.188]",
-        "resolved": "1.2.188",
-        "contentHash": "eMTzi8zci8zCYy8UGCL8D3QfuN2TBhvd4F1gC3qLD2q27/fz0vNwcQIEiYKqoJgjCTMKz3vkllNKsQsAtUPixw=="
+        "requested": "[1.2.195, 1.2.195]",
+        "resolved": "1.2.195",
+        "contentHash": "fckyWQCKJaHtmeQvIo3XS+X9mdcWpO78YTvWH7epbkM7huDHmKXSys+EbhrIIouryxTnP8Mc/VQPMIR20ixIVQ=="
       },
       "nanoFramework.System.Text": {
         "type": "Direct",
-        "requested": "[1.2.22, 1.2.22]",
-        "resolved": "1.2.22",
-        "contentHash": "vLvU0II3oJfajQ8MgNm8aCkaQ2JhjznzruwksOorbMJf86zLRbA5NUeg9X/KjbAE5pIalitUOqtNLKorYTbYGg=="
+        "requested": "[1.2.37, 1.2.37]",
+        "resolved": "1.2.37",
+        "contentHash": "ORgRq0HSynSBhlXRTHdhzZiOdq/nRhdnX+DeIGw56y9OSc8dvqUz6elm97Jz+4WQ6ikpvs5PFGINAa35kBebwQ=="
       }
     }
   }
