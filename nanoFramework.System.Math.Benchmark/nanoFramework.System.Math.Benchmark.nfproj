@@ -20,8 +20,11 @@
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
+    <Compile Include="BenchmarksBase.cs" />
     <Compile Include="IAssemblyHandler.cs" />
     <Compile Include="MathBenchmark.cs" />
+    <Compile Include="MaxBenchmarks.cs" />
+    <Compile Include="MinBenchmarks.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
