@@ -27,8 +27,8 @@
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
     <Compile Include="MathUnitTest.cs" />
-    <Compile Include="Math_Max_Tests.cs" />
-    <Compile Include="Math_Min_Tests.cs" />
+    <Compile Include="Max_Tests.cs" />
+    <Compile Include="Min_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
