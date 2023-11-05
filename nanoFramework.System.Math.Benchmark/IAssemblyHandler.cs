@@ -1,4 +1,4 @@
-﻿namespace nanoFramework.System.Math.Benchmark
+﻿namespace MathBenchmarks
 {
     public interface IAssemblyHandler
     {

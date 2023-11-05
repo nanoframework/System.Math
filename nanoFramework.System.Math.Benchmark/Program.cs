@@ -1,9 +1,7 @@
-using nanoFramework.Benchmark;
-using System;
-using System.Diagnostics;
 using System.Threading;
+using nanoFramework.Benchmark;
 
-namespace nanoFramework.System.Math.Benchmark
+namespace MathBenchmarks
 {
     public class Program
     {
