@@ -739,7 +739,7 @@ namespace MathUnitTests
             Assert.IsTrue(double.IsNaN(res), $"Min(...10,double.NaN) -- FAILED AT:  {res}");
 
             res = Math.Min(double.NaN, 10);
-            Assert.AreEqual(res, 10, $"Min(...NaN, 10) -- FAILED AT:  {res}");
+            Assert.AreEqual(double.IsNaN(res), 10, $"Min(...NaN, 10) -- FAILED AT:  {res}");
 
             res = Math.Min(double.NaN, double.NaN);
             Assert.IsTrue(double.IsNaN(res), $"Min(...NaN,double.NaN) -- FAILED AT:  {res}");

@@ -373,10 +373,8 @@ namespace System
         /// <param name="val1">The first of two single-precision floating-point numbers to compare.</param>
         /// <param name="val2">The second of two single-precision floating-point numbers to compare.</param>
         /// <returns>Parameter <paramref name="val1"/> or <paramref name="val2"/>, whichever is larger. If <paramref name="val1"/>, or <paramref name="val2"/>, or both <paramref name="val1"/> and <paramref name="val2"/> are equal to <see cref="float.NaN"/>, <see cref="float.NaN"/> is returned.</returns>
-        public static float Max(float val1, float val2)
-        {
-            return (float)Max((double)val1, val2);
-        }
+        [MethodImpl(MethodImplOptions.InternalCall)]
+        public static extern float Max(float val1, float val2);
 
         /// <summary>
         /// Returns the smaller of two 32-bit signed integers.
@@ -406,10 +404,8 @@ namespace System
         /// <param name="val1">The first of two single-precision floating-point numbers to compare. </param>
         /// <param name="val2">The second of two single-precision floating-point numbers to compare. </param>
         /// <returns>Parameter <paramref name="val1"/> or <paramref name="val2"/>, whichever is smaller. If <paramref name="val1"/>, <paramref name="val2"/>, or both <paramref name="val1"/> and <paramref name="val2"/> are equal to <see cref="float.NaN"/>, <see cref="float.NaN"/> is returned.</returns>
-        public static float Min(float val1, float val2)
-        {
-            return (float)Min((double)val1, val2);
-        }
+        [MethodImpl(MethodImplOptions.InternalCall)]
+        public static extern float Min(float val1, float val2);
 
         /// <summary>
         /// Returns a specified number raised to the specified power.
