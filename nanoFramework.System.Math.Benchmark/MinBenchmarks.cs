@@ -30,7 +30,6 @@ namespace MathBenchmarks
             });
         }
 
-        // TODO: This is much slower than System.Math.Max(double,double) and I'm assuming it's because the implementation is a cast to the native double method
         [Benchmark]
         public void Min_Float()
         {

@@ -353,6 +353,7 @@ namespace System
         /// <returns>Parameter <paramref name="val1"/> or <paramref name="val2"/>, whichever is larger.</returns>
         public static int Max(int val1, int val2)
         {
+            // TODO: Copy this over to MathInternal and remove the native version
             return (val1 >= val2) ? val1 : val2;
         }
 
@@ -384,7 +385,8 @@ namespace System
         /// <returns>Parameter <paramref name="val1"/> or <paramref name="val2"/>, whichever is smaller.</returns>
         public static int Min(int val1, int val2)
         {
-            return (val1 <= val2) ? val1 : val2;
+            // TODO: Copy this over to MathInternal and remove the native version
+            return (val2 >= val1) ? val1 : val2;
         }
 
         /// <summary>
