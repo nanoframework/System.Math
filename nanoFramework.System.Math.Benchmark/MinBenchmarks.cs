@@ -1,24 +1,26 @@
 ﻿using nanoFramework.Benchmark;
 using nanoFramework.Benchmark.Attributes;
+using System;
 
 namespace MathBenchmarks
 {
     [IterationCount(Iterations)]
     public class MinBenchmarks: BenchmarksBase
     {
-        [Benchmark]
-        public void Min_Double_Fast()
-        {
-            RunIterations(Loops, () =>
-            {
-                var result1 = FastMath.Min(DoublePositive1, DoubleNegative1);
-                var result2 = FastMath.Min(DoublePositive2, DoublePositive1);
-                var result3 = FastMath.Min(double.NaN, DoublePositive2);
-            });
-        }
+        protected const double DoublePositive1 = Math.PI;
+        protected const double DoublePositive2 = DoublePositive1 * 2;
+        protected const double DoubleNegative1 = DoublePositive1 * -1;
+
+        protected const float FloatPositive1 = (float)Math.PI;
+        protected const float FloatPositive2 = FloatPositive1 * 2;
+        protected const float FloatNegative1 = FloatPositive1 * -1;
+
+        protected const int IntPositive1 = 123456789;
+        protected const int IntPositive2 = IntPositive1 * 2;
+        protected const int IntNegative1 = IntPositive1 * -1;
 
         [Benchmark]
-        public void Min_Double_Math()
+        public void Min_Double()
         {
             RunIterations(Loops, () =>
             {
@@ -28,30 +30,9 @@ namespace MathBenchmarks
             });
         }
 
+        // TODO: This is much slower than System.Math.Max(double,double) and I'm assuming it's because the implementation is a cast to the native double method
         [Benchmark]
-        public void Min_Double_System()
-        {
-            RunIterations(Loops, () =>
-            {
-                var result1 = System.Math.Min(DoublePositive1, DoubleNegative1);
-                var result2 = System.Math.Min(DoublePositive2, DoublePositive1);
-                var result3 = System.Math.Min(double.NaN, DoublePositive2);
-            });
-        }
-
-        [Benchmark]
-        public void Min_Float_Fast()
-        {
-            RunIterations(Loops, () =>
-            {
-                var result1 = FastMath.Min(FloatPositive1, FloatNegative1);
-                var result2 = FastMath.Min(FloatPositive2, FloatPositive1);
-                var result3 = FastMath.Min(float.NaN, FloatPositive2);
-            });
-        }
-
-        [Benchmark]
-        public void Min_Float_Math()
+        public void Min_Float()
         {
             RunIterations(Loops, () =>
             {
@@ -61,48 +42,14 @@ namespace MathBenchmarks
             });
         }
 
-        // TODO: This is much slower than System.Math.Min(double,double) and I'm assuming it's because the implementation is a cast to the native double method
         [Benchmark]
-        public void Min_Float_System()
-        {
-            RunIterations(Loops, () =>
-            {
-                var result1 = System.Math.Min(FloatPositive1, FloatNegative1);
-                var result2 = System.Math.Min(FloatPositive2, FloatPositive1);
-                var result3 = System.Math.Min(float.NaN, FloatPositive2);
-            });
-        }
-
-        [Benchmark]
-        public void Min_Int_Fast()
-        {
-            RunIterations(Loops, () =>
-            {
-                var result1 = FastMath.Min(IntPositive1, IntNegative1);
-                var result2 = FastMath.Min(IntPositive2, IntPositive1);
-                var result3 = FastMath.Min(IntNegative1, IntPositive2);
-            });
-        }
-
-        [Benchmark]
-        public void Min_Int_Math()
+        public void Min_Int()
         {
             RunIterations(Loops, () =>
             {
                 var result1 = Math.Min(IntPositive1, IntNegative1);
                 var result2 = Math.Min(IntPositive2, IntPositive1);
                 var result3 = Math.Min(IntNegative1, IntPositive2);
-            });
-        }
-
-        [Benchmark]
-        public void Min_Int_System()
-        {
-            RunIterations(Loops, () =>
-            {
-                var result1 = System.Math.Min(IntPositive1, IntNegative1);
-                var result2 = System.Math.Min(IntPositive2, IntPositive1);
-                var result3 = System.Math.Min(IntNegative1, IntPositive2);
             });
         }
     }
