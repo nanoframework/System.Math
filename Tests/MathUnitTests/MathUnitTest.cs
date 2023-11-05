@@ -148,20 +148,20 @@ namespace MathUnitTests
         [TestMethod]
         public static void Clamp_MinGreaterThanMax_ThrowsArgumentException()
         {
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((sbyte)1, (sbyte)2, (sbyte)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((byte)1, (byte)2, (byte)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((short)1, (short)2, (short)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((ushort)1, (ushort)2, (ushort)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((sbyte)1, (sbyte)2, (sbyte)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((byte)1, (byte)2, (byte)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((short)1, (short)2, (short)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((ushort)1, (ushort)2, (ushort)1));
 
             // keeping cast on purpose to be able to test the method
 #pragma warning disable IDE0004
 #pragma warning disable S1905
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((int)1, (int)2, (int)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((uint)1, (uint)2, (uint)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((long)1, (long)2, (long)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((ulong)1, (ulong)2, (ulong)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((float)1, (float)2, (float)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((double)1, (double)2, (double)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((int)1, (int)2, (int)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((uint)1, (uint)2, (uint)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((long)1, (long)2, (long)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((ulong)1, (ulong)2, (ulong)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((float)1, (float)2, (float)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((double)1, (double)2, (double)1));
 #pragma warning restore S1905 
 #pragma warning restore IDE0004 
         }
