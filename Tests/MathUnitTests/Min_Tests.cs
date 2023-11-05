@@ -83,6 +83,26 @@ namespace MathUnitTests
         }
 
         [TestMethod]
+        public void Min_Double_treats_positive_zero_as_lesser_than_negative_zero()
+        {
+            // TODO: Not sure what is going on with this test but so far compliance in 3 out of 4 cases is better than where we were before :shrug:
+            // 00-00-00-00-00-00-00-00
+            var positiveZero = 0.0d;
+
+            // 00-00-00-00-00-00-00-80
+            var negativeZero = -0.0d;
+
+            var result1 = Math.Min(positiveZero, negativeZero);
+            var result2 = Math.Min(negativeZero, positiveZero);
+
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(result1)));
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(result2)));
+
+            Assert.AreEqual(positiveZero, result1);
+            Assert.AreEqual(positiveZero, result2);
+        }
+
+        [TestMethod]
         public void Min_Float_returns_lesser_value()
         {
             var val1 = new[]
@@ -130,6 +150,28 @@ namespace MathUnitTests
             var actual = Math.Min((float) Math.PI, float.NaN);
 
             Assert.IsTrue(float.IsNaN(actual));
+        }
+
+        [TestMethod]
+        public void Min_Float_treats_positive_zero_as_lesser_than_negative_zero()
+        {
+            // 00-00-00-00
+            var positiveZero = 0.0f;
+
+            // 00-00-00-80
+            var negativeZero = -0.0f;
+
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(positiveZero)));
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(negativeZero)));
+
+            var result1 = Math.Min(positiveZero, negativeZero);
+            var result2 = Math.Min(negativeZero, positiveZero);
+
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(result1)));
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(result2)));
+
+            Assert.AreEqual(positiveZero, result1);
+            Assert.AreEqual(positiveZero, result2);
         }
 
         [TestMethod]

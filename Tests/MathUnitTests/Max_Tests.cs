@@ -70,6 +70,25 @@ namespace MathUnitTests
         }
 
         [TestMethod]
+        public void Max_Double_treats_positive_zero_as_greater_than_negative_zero()
+        {
+            // 00-00-00-00-00-00-00-00
+            var positiveZero = 0.0d;
+
+            // 00-00-00-00-00-00-00-80
+            var negativeZero = -0.0d;
+
+            var result1 = Math.Max(positiveZero, negativeZero);
+            var result2 = Math.Max(negativeZero, positiveZero);
+
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(result1)));
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(result2)));
+
+            Assert.AreEqual(positiveZero, result1);
+            Assert.AreEqual(positiveZero, result2);
+        }
+
+        [TestMethod]
         public void Max_Float_returns_greater_value()
         {
             var val1 = new[]
@@ -117,6 +136,25 @@ namespace MathUnitTests
             var actual = Math.Max((float)Math.PI, float.NaN);
 
             Assert.IsTrue(float.IsNaN(actual));
+        }
+
+        [TestMethod]
+        public void Max_Float_treats_positive_zero_as_greater_than_negative_zero()
+        {
+            // 00-00-00-00-00-00-00-00
+            var positiveZero = 0.0f;
+
+            // 00-00-00-00-00-00-00-80
+            var negativeZero = -0.0f;
+
+            var result1 = Math.Max(positiveZero, negativeZero);
+            var result2 = Math.Max(negativeZero, positiveZero);
+
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(result1)));
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(result2)));
+
+            Assert.AreEqual(positiveZero, result1);
+            Assert.AreEqual(positiveZero, result2);
         }
 
         [TestMethod]

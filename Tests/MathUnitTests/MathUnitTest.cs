@@ -201,6 +201,7 @@ namespace MathUnitTests
             double pos_inf = (3.0 / 0.0);
             double neg_inf = (-3.0 / 0.0);
 
+            Console.WriteLine($"Expect nan={nan}, pos_inf={pos_inf}, neg_inf={neg_inf}");
 
             Assert.IsTrue(double.IsNaN(nan), "NaN was not correctly identified");
             Assert.IsFalse(double.IsPositiveInfinity(nan), "NaN was incorrectly identified as Positive Infinity");
@@ -208,15 +209,15 @@ namespace MathUnitTests
 
             //--//
 
+            Assert.IsFalse(double.IsNaN(pos_inf), "Positive Infinity  was incorrectly identified as double.NaN");
             Assert.IsTrue(double.IsPositiveInfinity(pos_inf), "Positive Infinity was not correctly identified");
-            Assert.IsFalse(double.IsNaN(pos_inf), "Positive Infinity  was incorrectly identified asdouble.NaN");
             Assert.IsFalse(double.IsNegativeInfinity(pos_inf), "Positive Infinity  was incorrectly identified as Negative Infinity");
 
             //--//
 
-            Assert.IsTrue(double.IsNegativeInfinity(neg_inf), "NegativeInfinity was not correctly identified");
+            Assert.IsFalse(double.IsNaN(neg_inf), "NegativeInfinity Infinity was incorrectly identified as double.NaN");
             Assert.IsFalse(double.IsPositiveInfinity(neg_inf), "NegativeInfinity Infinity was incorrectly identified as Positive Infinity");
-            Assert.IsFalse(double.IsNaN(neg_inf), "NegativeInfinity Infinity was incorrectly identified asdouble.NaN");
+            Assert.IsTrue(double.IsNegativeInfinity(neg_inf), "NegativeInfinity was not correctly identified");
         }
 
         [TestMethod]
