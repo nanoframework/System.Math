@@ -16,10 +16,10 @@ namespace MathBenchmarks
 #endif
             Console.WriteLine("Running benchmarks...");
 
-            //BenchmarkRunner.Run(typeof(IAssemblyHandler).Assembly);
-
             BenchmarkRunner.RunClass(typeof(MaxBenchmarks));
             BenchmarkRunner.RunClass(typeof(MinBenchmarks));
+
+            BenchmarkRunner.RunClass(typeof(MathBenchmark));
 
             Thread.Sleep(Timeout.Infinite);
         }

@@ -116,36 +116,6 @@ namespace MathBenchmarks
             var test = Math.Log10(-15);
         }
         [Benchmark]
-        public void Math_Max_int()
-        {
-            var test = Math.Max(-15, 15);
-        }
-        [Benchmark]
-        public void Math_Max_double()
-        {
-            var test = Math.Max(-15d, 15d);
-        }
-        [Benchmark]
-        public void Math_Max_float()
-        {
-            var test = Math.Max(-15f, 15f);
-        }
-        [Benchmark]
-        public void Math_Min_int()
-        {
-            var test = Math.Min(-15, 15);
-        }
-        [Benchmark]
-        public void Math_Min_double()
-        {
-            var test = Math.Min(-15d, 15d);
-        }
-        [Benchmark]
-        public void Math_Min_float()
-        {
-            var test = Math.Min(-15f, 15f);
-        }
-        [Benchmark]
         public void Math_Pow()
         {
             var test = Math.Pow(-15, 15);
