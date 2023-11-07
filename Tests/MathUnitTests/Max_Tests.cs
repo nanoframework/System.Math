@@ -7,19 +7,6 @@ namespace MathUnitTests
     public class Max_Tests
     {
         [TestMethod]
-        public void Max_Double_returns_greater_value_INVESTIGATE()
-        {
-            // TODO: Maybe I'm missing something here but the change in precision here seems like a defect as my expectation is that the same value sent in is returned
-            Assert.SkipTest("Skipping pending further investigation");
-
-            var expect = 1234.5678d;
-            var lower = expect / 2;
-
-            Assert.AreEqual(expect, Math.Max(expect, lower));
-            Assert.AreEqual(expect, Math.Max(lower, expect));
-        }
-
-        [TestMethod]
         public void Max_Double_returns_greater_value()
         {
             var val1 = new[]

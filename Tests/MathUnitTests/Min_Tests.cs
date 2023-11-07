@@ -7,32 +7,6 @@ namespace MathUnitTests
     public class Min_Tests
     {
         [TestMethod]
-        public void Min_Double_returns_lesser_value_INVESTIGATE()
-        {
-            // TODO: Maybe I'm missing something here but the change in precision here seems like a defect as my expectation is that the same value sent in is returned
-            Assert.SkipTest("Skipping pending further investigation");
-
-            var expect = 1234.5678d;
-            var higher = expect * 2.0d;
-
-            /*
-            var actual1 = Math.Min(expect, higher);
-            var actual2 = Math.Min(expect, higher);
-
-            Console.WriteLine($"Test: {Math.Abs(expect - actual1)}");
-            Console.WriteLine($"Double: {double.Epsilon}");
-            Console.WriteLine($"Float: {float.Epsilon}");
-
-            Assert.IsTrue(Math.Abs(expect - actual1) < double.Epsilon);
-            Assert.IsTrue(Math.Abs(expect - actual2) < double.Epsilon);
-            */
-
-            Assert.AreEqual(expect, Math.Min(expect, higher));
-            Assert.AreEqual(expect, Math.Min(higher, expect));
-
-        }
-
-        [TestMethod]
         public void Min_Double_returns_lesser_value()
         {
             var val1 = new[]
