@@ -148,20 +148,20 @@ namespace MathUnitTests
         [TestMethod]
         public static void Clamp_MinGreaterThanMax_ThrowsArgumentException()
         {
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((sbyte)1, (sbyte)2, (sbyte)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((byte)1, (byte)2, (byte)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((short)1, (short)2, (short)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((ushort)1, (ushort)2, (ushort)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((sbyte)1, (sbyte)2, (sbyte)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((byte)1, (byte)2, (byte)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((short)1, (short)2, (short)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((ushort)1, (ushort)2, (ushort)1));
 
             // keeping cast on purpose to be able to test the method
 #pragma warning disable IDE0004
 #pragma warning disable S1905
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((int)1, (int)2, (int)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((uint)1, (uint)2, (uint)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((long)1, (long)2, (long)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((ulong)1, (ulong)2, (ulong)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((float)1, (float)2, (float)1));
-            Assert.Throws(typeof(ArgumentException), () => Math.Clamp((double)1, (double)2, (double)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((int)1, (int)2, (int)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((uint)1, (uint)2, (uint)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((long)1, (long)2, (long)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((ulong)1, (ulong)2, (ulong)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((float)1, (float)2, (float)1));
+            Assert.ThrowsException(typeof(ArgumentException), () => Math.Clamp((double)1, (double)2, (double)1));
 #pragma warning restore S1905 
 #pragma warning restore IDE0004 
         }
@@ -201,6 +201,7 @@ namespace MathUnitTests
             double pos_inf = (3.0 / 0.0);
             double neg_inf = (-3.0 / 0.0);
 
+            Console.WriteLine($"Expect nan={nan}, pos_inf={pos_inf}, neg_inf={neg_inf}");
 
             Assert.IsTrue(double.IsNaN(nan), "NaN was not correctly identified");
             Assert.IsFalse(double.IsPositiveInfinity(nan), "NaN was incorrectly identified as Positive Infinity");
@@ -208,15 +209,15 @@ namespace MathUnitTests
 
             //--//
 
+            Assert.IsFalse(double.IsNaN(pos_inf), "Positive Infinity  was incorrectly identified as double.NaN");
             Assert.IsTrue(double.IsPositiveInfinity(pos_inf), "Positive Infinity was not correctly identified");
-            Assert.IsFalse(double.IsNaN(pos_inf), "Positive Infinity  was incorrectly identified asdouble.NaN");
             Assert.IsFalse(double.IsNegativeInfinity(pos_inf), "Positive Infinity  was incorrectly identified as Negative Infinity");
 
             //--//
 
-            Assert.IsTrue(double.IsNegativeInfinity(neg_inf), "NegativeInfinity was not correctly identified");
+            Assert.IsFalse(double.IsNaN(neg_inf), "NegativeInfinity Infinity was incorrectly identified as double.NaN");
             Assert.IsFalse(double.IsPositiveInfinity(neg_inf), "NegativeInfinity Infinity was incorrectly identified as Positive Infinity");
-            Assert.IsFalse(double.IsNaN(neg_inf), "NegativeInfinity Infinity was incorrectly identified asdouble.NaN");
+            Assert.IsTrue(double.IsNegativeInfinity(neg_inf), "NegativeInfinity was not correctly identified");
         }
 
         [TestMethod]
@@ -663,86 +664,6 @@ namespace MathUnitTests
 
             res = Math.Log10(double.NegativeInfinity);
             Assert.IsTrue(double.IsNaN(res), $"Log10(...NegativeInfinity) -- FAILED AT: {res}");
-        }
-
-        [TestMethod]
-        public static void Test_Max_2()
-        {
-            //
-            // Summary:
-            //     Returns the larger of two double-precision floating-point numbers.
-            //
-            // Parameters:
-            //   val1:
-            //     The first of two double-precision floating-point numbers to compare.
-            //
-            //   val2:
-            //     The second of two double-precision floating-point numbers to compare.
-            //
-            // Returns:
-            //     Parameter val1 or val2, whichever is larger. If val1 OR both val1
-            //     and val2 are equal to System.Double.NaN, System.Double.NaN is returned.
-            double[] x = new double[] { 6.00000000000000000000, 6.50000000000000000000, 7.00000000000000000000, 7.50000000000000000000, -0.50000000000000000000, -1.00000000000000000000, -1.50000000000000000000, -2.00000000000000000000 };
-            double[] y = new double[] { 1, 1.140238321, 1.600286858, 2.509178479, 4.121836054, 6.890572365, 11.59195328, -0.50000000000000000000 };
-
-            double[] answer = new double[] { 6.00000000000000000000, 6.50000000000000000000, 7.00000000000000000000, 7.50000000000000000000, 4.12183605386995000000, 6.89057236497588000000, 11.59195328, -0.50000000000000000000 };
-            double res;
-
-            for (int i = 0; i < x.Length; i++)
-            {
-                res = Math.Max(x[i], y[i]);
-
-                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Max(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
-            }
-
-            res = Math.Max(10, double.NaN);
-            Assert.IsTrue(double.IsNaN(res), $"Max(...10,double.NaN) -- FAILED AT: {res}");
-
-            res = Math.Max(double.NaN, 10);
-            Assert.IsTrue(double.IsNaN(res), $"Max(...NaN, 10) -- FAILED AT: {res}");
-
-            res = Math.Max(double.NaN, double.NaN);
-            Assert.IsTrue(double.IsNaN(res), $"Max(...NaN,double.NaN) -- FAILED AT:  {res}");
-        }
-
-        [TestMethod]
-        public static void Test_Min_2()
-        {
-            //
-            // Summary:
-            //     Returns the smaller of two double-precision floating-point numbers.
-            //
-            // Parameters:
-            //   val1:
-            //     The first of two double-precision floating-point numbers to compare.
-            //
-            //   val2:
-            //     The second of two double-precision floating-point numbers to compare.
-            //
-            // Returns:
-            //     Parameter val1 or val2, whichever is smaller. If val1, val2, or both val1
-            //     and val2 are equal to System.Double.NaN, System.Double.NaN is returned.
-            double[] x = new double[] { 6.00000000000000000000, 6.50000000000000000000, 7.00000000000000000000, 7.50000000000000000000, -0.50000000000000000000, -1.00000000000000000000, -1.50000000000000000000, -2.00000000000000000000 };
-            double[] y = new double[] { 1, 1.140238321, 1.600286858, 2.509178479, 4.121836054, 6.890572365, 11.59195328, -0.50000000000000000000 };
-
-            double[] answer = new double[] { 1, 1.140238321, 1.600286858, 2.509178479, -0.50000000000000000000, -1.00000000000000000000, -1.50000000000000000000, -2.00000000000000000000 };
-            double res;
-
-            for (int i = 0; i < x.Length; i++)
-            {
-                res = Math.Min(x[i], y[i]);
-
-                Assert.IsFalse((answer[i] - res) > 0.0001d || (answer[i] - res) < -0.0001d, $"Min(...{x[i]}, {y[i]}) -- FAILED AT: {res}");
-            }
-
-            res = Math.Min(10, double.NaN);
-            Assert.IsTrue(double.IsNaN(res), $"Min(...10,double.NaN) -- FAILED AT:  {res}");
-
-            res = Math.Min(double.NaN, 10);
-            Assert.AreEqual(res, 10, $"Min(...NaN, 10) -- FAILED AT:  {res}");
-
-            res = Math.Min(double.NaN, double.NaN);
-            Assert.IsTrue(double.IsNaN(res), $"Min(...NaN,double.NaN) -- FAILED AT:  {res}");
         }
 
         [TestMethod]

@@ -27,23 +27,26 @@
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
     <Compile Include="MathUnitTest.cs" />
+    <Compile Include="Max_Tests.cs" />
+    <Compile Include="Min_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="mscorlib, Version=1.14.3.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+    <Content Include="packages.lock.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
       <HintPath>..\..\packages\nanoFramework.CoreLibrary.1.14.2\lib\mscorlib.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="nanoFramework.TestFramework, Version=2.1.85.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+    <Reference Include="nanoFramework.TestFramework">
       <HintPath>..\..\packages\nanoFramework.TestFramework.2.1.85\lib\nanoFramework.TestFramework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="nanoFramework.UnitTestLauncher, Version=0.0.0.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+    <Reference Include="nanoFramework.UnitTestLauncher">
       <HintPath>..\..\packages\nanoFramework.TestFramework.2.1.85\lib\nanoFramework.UnitTestLauncher.exe</HintPath>
-      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="nano.runsettings" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
