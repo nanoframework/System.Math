@@ -2,7 +2,29 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Math/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.5.25...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.5.29...HEAD)
+
+**Implemented enhancements:**
+
+- Improve min max performance and IEEE compliance [\#151](https://github.com/nanoframework/System.Math/pull/151)
+
+**Documentation and other chores:**
+
+- Update 5 NuGet dependencies [\#154](https://github.com/nanoframework/System.Math/pull/154)
+- Update 3 NuGet dependencies [\#150](https://github.com/nanoframework/System.Math/pull/150)
+- Update 1 NuGet dependencies [\#149](https://github.com/nanoframework/System.Math/pull/149)
+- Update 2 NuGet dependencies [\#148](https://github.com/nanoframework/System.Math/pull/148)
+- Update 1 NuGet dependencies [\#147](https://github.com/nanoframework/System.Math/pull/147)
+- Update 2 NuGet dependencies [\#146](https://github.com/nanoframework/System.Math/pull/146)
+- Update 1 NuGet dependencies [\#145](https://github.com/nanoframework/System.Math/pull/145)
+- Update 1 NuGet dependencies [\#144](https://github.com/nanoframework/System.Math/pull/144)
+- Update 1 NuGet dependencies [\#143](https://github.com/nanoframework/System.Math/pull/143)
+- Update 2 NuGet dependencies [\#142](https://github.com/nanoframework/System.Math/pull/142)
+- Update 4 NuGet dependencies [\#141](https://github.com/nanoframework/System.Math/pull/141)
+
+## [v1.5.29](https://github.com/nanoframework/System.Math/tree/v1.5.29) (2022-12-28)
+
+[Full Changelog](https://github.com/nanoframework/System.Math/compare/v1.5.25...v1.5.29)
 
 **Documentation and other chores:**
 
