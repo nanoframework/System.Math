@@ -32,6 +32,10 @@ resources:
       type: github
       name: nanoframework/nf-tools
       endpoint: nanoframework
+    - repository: unitsnet
+      type: github
+      name: angularsen/UnitsNet
+      endpoint: nanoframework
 
 variables:
   - name: nugetPackageName
@@ -98,6 +102,10 @@ jobs:
   steps:
   # need this here in order to persist GitHub credentials 
   - checkout: self
+    fetchDepth: 1
+    persistCredentials: true
+
+  - checkout: unitsnet
     fetchDepth: 1
     persistCredentials: true
 
