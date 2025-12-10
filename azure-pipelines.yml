@@ -80,6 +80,7 @@ jobs:
       sonarCloudProject: 'nanoframework_lib-nanoFramework.System.Math'
       runUnitTests: true
       unitTestRunsettings: '$(System.DefaultWorkingDirectory)\.runsettings'
+      usePreviewBuild: true
 
 ##############################
 - job: Update_Dependents

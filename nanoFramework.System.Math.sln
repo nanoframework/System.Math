@@ -6,7 +6,7 @@ Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "nanoFramework.System.Math",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D1E7E5ED-2178-4E00-9FC5-EC7ADC24A74F}"
 	ProjectSection(SolutionItems) = preProject
-		nanoFramework.System.Math.DELIVERABLES.nuspec = nanoFramework.System.Math.DELIVERABLES.nuspec
+		.runsettings = .runsettings
 		nanoFramework.System.Math.nuspec = nanoFramework.System.Math.nuspec
 		NuGet.Config = NuGet.Config
 		version.json = version.json

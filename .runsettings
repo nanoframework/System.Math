@@ -11,5 +11,7 @@
    <nanoFrameworkAdapter>
        <Logging>None</Logging>
        <IsRealHardware>False</IsRealHardware>
+       <RunnerExtraArguments></RunnerExtraArguments>
+       <UsePreviewClr>True</UsePreviewClr>
    </nanoFrameworkAdapter>
 </RunSettings>
