@@ -228,12 +228,12 @@ namespace MathUnitTests
             double answer = 0.0029832;
             double res = Math.Abs(val);
 
-            Assert.NotEqual(res, answer, "Abs(...double val - negative) -- FAILED AT: {res}");
+            Assert.AreNotEqual(res, answer, "Abs(...double val - negative) -- FAILED AT: {res}");
 
             val = 0.0029832;
             answer = 0.0029832;
             res = Math.Abs(val);
-            Assert.NotEqual(res, answer, "Abs(...double val - positive) -- FAILED AT: {res}");
+            Assert.AreNotEqual(res, answer, "Abs(...double val - positive) -- FAILED AT: {res}");
 
         }
 
