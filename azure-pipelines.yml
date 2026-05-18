@@ -105,18 +105,12 @@ jobs:
     fetchDepth: 1
     persistCredentials: true
 
-  - checkout: unitsnet
-    fetchDepth: 1
-    persistCredentials: true
-
   # update dependents
   # use this to make sure nuget package is published
   - template: azure-pipelines-templates/update-dependents.yml@templates  
     parameters:
       packageName: '$(nugetPackageName)'
       repositoriesToUpdate:
-
-  - template: azure-pipelines-templates/update-units-net.yml@templates
 
 ##################################
 # report build failure to Discord
